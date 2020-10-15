@@ -11,6 +11,10 @@ const animalSchema = new Schema({
     type: String,
     enum : ['Critical', 'Vulnerable', 'Least concerned'],
 },
+gender: {
+    type: String,
+    enum : ['Male', 'Female',],
+},
   adopted: Boolean,
 });
 
