@@ -4,12 +4,12 @@ const Schema = mongoose.Schema;
 const animalSchema = new Schema({
   name: String,
   profileImage: String,
-  age: Number,
+  age: String,
   specie: String,
   description: String,
-  endangered: {
+  ConservationStatus: {
     type: String,
-    enum : ['Critical', 'Vulnerable', 'Least concerned'],
+    enum : ['Critical', 'Vulnerable', 'Least Concerned', 'Near Threatened', 'Data Deficient', 'Endangered',],
 },
 gender: {
     type: String,
