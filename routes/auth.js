@@ -38,6 +38,7 @@ router.post("/signup", (req, res, next) => {
 
       User.create(newUser)
         .then((newUserDocument) => {
+          console.log(newUserDocument);
           /* Login on signup */
           req.session.currentUser = newUserDocument._id;
           res.redirect("/api/auth/isLoggedIn");
