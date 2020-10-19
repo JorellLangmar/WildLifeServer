@@ -16,6 +16,23 @@ router.get("/", (req, res, next) => {
     });
 });
 
+//GET SOME
+router.get("/filter/:data", (req, res, next) => {
+  console.log("You get there");
+  console.log(req.params);
+  let str = req.params.data.split(',');
+  console.log(str);
+  
+  Animal.find({ specie: str })
+    .then((dbRes) => {
+      res.status(200).json(dbRes);
+    })
+    .catch((dbErr) => {
+      console.log(dbErr);
+      res.status(500).json(dbErr);
+    });
+});
+
 //CREATE
 router.post("/", uploader.single("image"), (req, res, next) => {
   console.log("il passe par ici - create");
