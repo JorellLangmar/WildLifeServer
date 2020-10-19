@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const animals = [
 {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097457/Simba.png",
     name: "Simba",
     specie: "Lion",
     ConservationStatus: "Vulnerable",
@@ -14,7 +14,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097459/Clarence.png",
     name: "Clarence",
     specie: "Lion",
     ConservationStatus: "Vulnerable",
@@ -24,7 +24,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097457/Winnie.png",
     name: "Winnie",
     specie: "Lion",
     ConservationStatus: "Vulnerable",
@@ -34,7 +34,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Nala.png",
     name: "Nala",
     specie: "Lion",
     ConservationStatus: "Vulnerable",
@@ -44,17 +44,17 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Keanu.png",
     name: "Keanu",
     specie: "Leopard",
     ConservationStatus: "Vulnerable",
     gender: "Male",
-    age: "17 years",
+    age: "12 years",
     description: "String",
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Leo.png",
     name: "Leo",
     specie: "Leopard",
     ConservationStatus: "Vulnerable",
@@ -64,17 +64,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
-    name: "Clarence",
-    specie: "Lion",
-    ConservationStatus: "Vulnerable",
-    gender: "Male",
-    age: "10 years",
-    description: "String",
-    adopted: false,
-  },
-  {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Kovu.png",
     name: "Kovu",
     specie: "Cheetah",
     ConservationStatus: "Vulnerable",
@@ -84,7 +74,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097459/Ahena.png",
     name: "Athena",
     specie: "Cheetah",
     ConservationStatus: "Vulnerable",
@@ -94,7 +84,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097459/Bolt.png",
     name: "Bolt",
     specie: "Cheetah",
     ConservationStatus: "Vulnerable",
@@ -104,7 +94,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097459/Flash.png",
     name: "Flash",
     specie: "Cheetah",
     ConservationStatus: "Vulnerable",
@@ -114,17 +104,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
-    name: "Clarence",
-    specie: "Lion",
-    ConservationStatus: "Vulnerable",
-    gender: "Male",
-    age: "10 years",
-    description: "String",
-    adopted: false,
-  },
-  {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Bilbo.png",
     name: "Bilbo",
     specie: "Giraffe",
     ConservationStatus: "Vulnerable",
@@ -134,17 +114,17 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Chuck.png",
     name: "Chuck",
     specie: "Oryx",
     ConservationStatus: "Least Concerned",
     gender: "Male",
-    age: "10 years",
+    age: "7 months",
     description: "String",
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Robyn.png",
     name: "Robyn",
     specie: "African Wild Dog",
     ConservationStatus: "Endangered",
@@ -154,7 +134,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097457/Pax.png",
     name: "Pax",
     specie: "African Wild Dog",
     ConservationStatus: "Endangered",
@@ -164,7 +144,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Ruby.png",
     name: "Ruby",
     specie: "Chacma Baboon",
     ConservationStatus: "Least Concerned",
@@ -174,7 +154,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Philly.png",
     name: "Philly",
     specie: "Chacma Baboon",
     ConservationStatus: "Least Concerned",
@@ -184,7 +164,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Tasha.png",
     name: "Tasha",
     specie: "Chacma Baboon",
     ConservationStatus: "Least Concerned",
@@ -194,7 +174,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Rafiki.png",
     name: "Rafiki",
     specie: "Chacma Baboon",
     ConservationStatus: "Least Concerned",
@@ -204,7 +184,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097459/Bim.png",
     name: "Bim",
     specie: "Warthog",
     ConservationStatus: "Least Concerned",
@@ -214,7 +194,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Boom.png",
     name: "Boom",
     specie: "Warthog",
     ConservationStatus: "Least Concerned",
@@ -224,7 +204,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Pumbaa.png",
     name: "Pumbaa",
     specie: "Warthog",
     ConservationStatus: "Least Concerned",
@@ -234,7 +214,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097457/Timon.png",
     name: "Timon",
     specie: "Meerkat",
     ConservationStatus: "Least Concerned",
@@ -244,7 +224,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Louis.png",
     name: "Louis",
     specie: "Meerkat",
     ConservationStatus: "Least Concerned",
@@ -254,7 +234,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097458/Hope.png",
     name: "Hope",
     specie: "White Rhinoceros",
     ConservationStatus: "Near Threatened",
@@ -264,7 +244,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb1e796352685.5eac47879affc.jpg",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Ciara.png",
     name: "Ciara",
     specie: "Black Rhinoceros",
     ConservationStatus: "Critical",
@@ -274,7 +254,7 @@ const animals = [
     adopted: false,
   },
   {
-    profileImage: "https://ca.slack-edge.com/T02CQ4EN4-U016JT6UY07-14dfe344bd19-512",
+    profileImage: "https://res.cloudinary.com/dgkyffbfo/image/upload/v1603097460/Nico.png",
     name: "Nico",
     specie: "EnaultEnault",
     ConservationStatus: "Data Deficient",
