@@ -58,6 +58,7 @@ router.patch("/:id", (req, res, next) => {
 
 //DELETE
 router.delete("/:id", (req, res, next) => {
+  console.log(req.params.id);
     Animal.findByIdAndRemove(req.params.id)
       .then((deletedDoc) => {
         res.sendStatus(204);
