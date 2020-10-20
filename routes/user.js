@@ -46,11 +46,13 @@ router.get("/:id", (req, res, next) => {
 //UPDATE
 router.patch("/:id", (req, res, next) => {
     const updateUser = req.body;
-    Event.findByIdAndUpdate(req.params.id, updateUser, {
+    console.log(updateUser);
+    User.findByIdAndUpdate(req.params.id, updateUser, {
       new: true,
     })
       .then((userDoc) => res.status(200).json(userDoc))
       .catch((err) => {
+        console.log(err);
         res.status(500).json(err);
       });
   });

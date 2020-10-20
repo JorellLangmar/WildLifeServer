@@ -54,7 +54,7 @@ router.post("/", uploader.single("image"), (req, res, next) => {
 router.get("/:id", (req, res, next) => {
   Animal.findById(req.params.id)
     .then((dbRes) => {
-      console.log(dbRes);
+      // console.log(dbRes);
       res.status(200).json(dbRes);
     })
     .catch((err) => {
