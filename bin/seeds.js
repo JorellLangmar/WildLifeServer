@@ -10,7 +10,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "6 years",
-    description: "String",
+    description: "Lions inhabit the plains and savannahs throughout most of sub-Saharan Africa. These carnivores will eat most large ungulates, or hoofed species. African lions are the most social of all big cats and live together in groups or “prides.” Females do most of the hunting, and male lions defend the pride’s territory. While lions hunt in packs, individual lions perform the actual kill. Currently, these majestic cats are threatened by habitat loss.",
     adopted: false,
   },
   {
@@ -20,7 +20,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "10 years",
-    description: "String",
+    description: "Lions inhabit the plains and savannahs throughout most of sub-Saharan Africa. These carnivores will eat most large ungulates, or hoofed species. African lions are the most social of all big cats and live together in groups or “prides.” Females do most of the hunting, and male lions defend the pride’s territory. While lions hunt in packs, individual lions perform the actual kill. Currently, these majestic cats are threatened by habitat loss.",
     adopted: false,
   },
   {
@@ -30,7 +30,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Female",
     age: "7 years",
-    description: "String",
+    description: "Lions inhabit the plains and savannahs throughout most of sub-Saharan Africa. These carnivores will eat most large ungulates, or hoofed species. African lions are the most social of all big cats and live together in groups or “prides.” Females do most of the hunting, and male lions defend the pride’s territory. While lions hunt in packs, individual lions perform the actual kill. Currently, these majestic cats are threatened by habitat loss.",
     adopted: false,
   },
   {
@@ -40,7 +40,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Female",
     age: "4 years",
-    description: "String",
+    description: "Lions inhabit the plains and savannahs throughout most of sub-Saharan Africa. These carnivores will eat most large ungulates, or hoofed species. African lions are the most social of all big cats and live together in groups or “prides.” Females do most of the hunting, and male lions defend the pride’s territory. While lions hunt in packs, individual lions perform the actual kill. Currently, these majestic cats are threatened by habitat loss.",
     adopted: false,
   },
   {
@@ -50,7 +50,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "12 years",
-    description: "String",
+    description: "Surviving on a diet mainly of small mammals and birds, leopards are nocturnal and spend much of the day resting, well camouflaged among the trees. Though rarely seen, leopards are the most widespread member of the cat family, largely due to their highly adaptable hunting and feeding behavior. The greatest threats to this species are revenge killings for attacks on livestock and illegal hunting for their highly prized furs.",
     adopted: false,
   },
   {
@@ -60,7 +60,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "8 years",
-    description: "String",
+    description: "Surviving on a diet mainly of small mammals and birds, leopards are nocturnal and spend much of the day resting, well camouflaged among the trees. Though rarely seen, leopards are the most widespread member of the cat family, largely due to their highly adaptable hunting and feeding behavior. The greatest threats to this species are revenge killings for attacks on livestock and illegal hunting for their highly prized furs.",
     adopted: false,
   },
   {
@@ -70,7 +70,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "4 years",
-    description: "String",
+    description: "Although once widespread in Asia and Africa, cheetah populations are now isolated to the savannahs and grasslands of sub-Saharan Africa. Cheetahs are the world’s fastest land animals and are capable of sprinting at speeds up to 70 miles per hour. And unlike other big cats, cheetahs do not roar. These magnificent cats prey upon hoofed animals such as gazelles, impalas and wildebeest calves. Cheetahs are threatened by hunting, habitat loss and the decline of prey populations.",
     adopted: false,
   },
   {
@@ -80,7 +80,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Female",
     age: "8 years",
-    description: "String",
+    description: "Although once widespread in Asia and Africa, cheetah populations are now isolated to the savannahs and grasslands of sub-Saharan Africa. Cheetahs are the world’s fastest land animals and are capable of sprinting at speeds up to 70 miles per hour. And unlike other big cats, cheetahs do not roar. These magnificent cats prey upon hoofed animals such as gazelles, impalas and wildebeest calves. Cheetahs are threatened by hunting, habitat loss and the decline of prey populations.",
     adopted: false,
   },
   {
@@ -90,7 +90,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "3 years",
-    description: "String",
+    description: "Although once widespread in Asia and Africa, cheetah populations are now isolated to the savannahs and grasslands of sub-Saharan Africa. Cheetahs are the world’s fastest land animals and are capable of sprinting at speeds up to 70 miles per hour. And unlike other big cats, cheetahs do not roar. These magnificent cats prey upon hoofed animals such as gazelles, impalas and wildebeest calves. Cheetahs are threatened by hunting, habitat loss and the decline of prey populations.",
     adopted: false,
   },
   {
@@ -100,7 +100,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "3 years",
-    description: "String",
+    description: "Although once widespread in Asia and Africa, cheetah populations are now isolated to the savannahs and grasslands of sub-Saharan Africa. Cheetahs are the world’s fastest land animals and are capable of sprinting at speeds up to 70 miles per hour. And unlike other big cats, cheetahs do not roar. These magnificent cats prey upon hoofed animals such as gazelles, impalas and wildebeest calves. Cheetahs are threatened by hunting, habitat loss and the decline of prey populations.",
     adopted: false,
   },
   {
@@ -110,7 +110,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "6 months",
-    description: "String",
+    description: "Giraffes are native to the open savannahs and wooded grasslands of eastern and southern Africa, where acacia trees and shrubs are plentiful. Their long necks are an adaptation to facilitate feeding on foliage beyond the reach of other hoofed animals, which may explain their plentiful distribution. Like a fingerprint, the markings of a giraffe’s coat are unique to each individual. Habitat destruction continues to threaten their future.ng",
     adopted: false,
   },
   {
@@ -120,7 +120,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "7 months",
-    description: "String",
+    description: "Oryx are a true desert animal, with a thick, horse-like neck; a short mane; and a compact, muscular body. A defined pattern of black markings that contrast with their white face and fawn-colored body are prominently displayed during dominance rituals to emphasize the length of their horns and the strength of their shoulders.",
     adopted: false,
   },
   {
@@ -130,7 +130,7 @@ const animals = [
     ConservationStatus: "Endangered",
     gender: "Female",
     age: "3 years",
-    description: "String",
+    description: "African wild dogs live in packs usually dominated by a monogamous breeding pair. The female has a litter of two to 20 pups which are cared for by the entire pack. Very social, packs sometimes share food and assist weak or ill members. Social interactions are common, and the dogs communicate by touch, actions, and vocalizations.",
     adopted: false,
   },
   {
@@ -140,7 +140,7 @@ const animals = [
     ConservationStatus: "Endangered",
     gender: "Male",
     age: "4 years",
-    description: "String",
+    description: "African wild dogs live in packs usually dominated by a monogamous breeding pair. The female has a litter of two to 20 pups which are cared for by the entire pack. Very social, packs sometimes share food and assist weak or ill members. Social interactions are common, and the dogs communicate by touch, actions, and vocalizations.",
     adopted: false,
   },
   {
@@ -150,7 +150,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Female",
     age: "8 Months",
-    description: "String",
+    description: "Chacma baboons are largely omnivorous and are common in savannah woodland, steppes and sub-desert, montane regions (e.g. Drakensberg Mountains), Cape Fynbos and Succulent Karoo areas of southern Africa. Although the species is not threatened, increasing overlap between their natural range and human settlements has resulted in human-wildlife conflict.",
     adopted: false,
   },
   {
@@ -160,7 +160,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "1 year",
-    description: "String",
+    description: "Chacma baboons are largely omnivorous and are common in savannah woodland, steppes and sub-desert, montane regions (e.g. Drakensberg Mountains), Cape Fynbos and Succulent Karoo areas of southern Africa. Although the species is not threatened, increasing overlap between their natural range and human settlements has resulted in human-wildlife conflict.",
     adopted: false,
   },
   {
@@ -170,7 +170,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Female",
     age: "2 years",
-    description: "String",
+    description: "Chacma baboons are largely omnivorous and are common in savannah woodland, steppes and sub-desert, montane regions (e.g. Drakensberg Mountains), Cape Fynbos and Succulent Karoo areas of southern Africa. Although the species is not threatened, increasing overlap between their natural range and human settlements has resulted in human-wildlife conflict.",
     adopted: false,
   },
   {
@@ -180,7 +180,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "4 year",
-    description: "String",
+    description: "Chacma baboons are largely omnivorous and are common in savannah woodland, steppes and sub-desert, montane regions (e.g. Drakensberg Mountains), Cape Fynbos and Succulent Karoo areas of southern Africa. Although the species is not threatened, increasing overlap between their natural range and human settlements has resulted in human-wildlife conflict.",
     adopted: false,
   },
   {
@@ -190,7 +190,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "6 months",
-    description: "String",
+    description: "Warthogs are African pigs named for the wart-like appearance of their faces. They are confined to moist and dry African savanna grasslands, open bushlands and woodlands within range of surface water. Warthogs eat grasses and plants and also use their snouts to dig for roots or bulbs.",
     adopted: false,
   },
   {
@@ -200,7 +200,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "4 months",
-    description: "String",
+    description: "Warthogs are African pigs named for the wart-like appearance of their faces. They are confined to moist and dry African savanna grasslands, open bushlands and woodlands within range of surface water. Warthogs eat grasses and plants and also use their snouts to dig for roots or bulbs.",
     adopted: false,
   },
   {
@@ -210,7 +210,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "5 years",
-    description: "String",
+    description: "Warthogs are African pigs named for the wart-like appearance of their faces. They are confined to moist and dry African savanna grasslands, open bushlands and woodlands within range of surface water. Warthogs eat grasses and plants and also use their snouts to dig for roots or bulbs.",
     adopted: false,
   },
   {
@@ -220,7 +220,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "1 year",
-    description: "String",
+    description: "Meerkats dwell in the savannahs and grasslands of South Africa, Namibia, Botswana and Angola. Their diet consists of insects, but they will also eat small vertebrates, eggs and plants. Highly social, meerkats live in three-family groups, which may consist of as many as 30 individuals. Each family comprises a breeding pair and their offspring. Behavior within packs is very friendly, but can become aggressive and violent toward outsiders. Meerkats are at risk from habitat loss.",
     adopted: false,
   },
   {
@@ -230,7 +230,7 @@ const animals = [
     ConservationStatus: "Least Concerned",
     gender: "Male",
     age: "3 months",
-    description: "String",
+    description: "Meerkats dwell in the savannahs and grasslands of South Africa, Namibia, Botswana and Angola. Their diet consists of insects, but they will also eat small vertebrates, eggs and plants. Highly social, meerkats live in three-family groups, which may consist of as many as 30 individuals. Each family comprises a breeding pair and their offspring. Behavior within packs is very friendly, but can become aggressive and violent toward outsiders. Meerkats are at risk from habitat loss.",
     adopted: false,
   },
   {
@@ -240,7 +240,7 @@ const animals = [
     ConservationStatus: "Near Threatened",
     gender: "Female",
     age: "8 months",
-    description: "String",
+    description: "Southern white rhinos, once thought to be extinct, now thrive in protected sanctuaries and are classified as Near Threatened. But the Northern white rhino subspecies is believed to be extinct in the wild and only a few captive individuals remain in a sanctuary in Kenya. Black rhinos have doubled in number over the past two decades from their low point of 2,480 individuals, but total numbers are still a fraction of the estimated 100,000 that existed in the early part of the 20th century.",
     adopted: false,
   },
   {
@@ -250,7 +250,7 @@ const animals = [
     ConservationStatus: "Critical",
     gender: "Female",
     age: "2 years",
-    description: "String",
+    description: "The main threat to black rhinos is poaching for the illegal wildlife trade. Rhinos are killed for their horn, which some cultures believe to possess medicinal properties. The horn is also highly prized as a status symbol in Asian countries such as Vietnam. Stamping out wildlife crime is a priority for us. We are working with partners to increase law enforcement, support wildlife rangers and antipoaching efforts, and reduce consumer demand for illegal wildlife products such as rhino horn.",
     adopted: false,
   },
   {
@@ -260,7 +260,7 @@ const animals = [
     ConservationStatus: "Data Deficient",
     gender: "Male",
     age: "old",
-    description: "String",
+    description: "Little is known about the Enaultenault. One of the largest primate on the planet it can be observed in the Southern parts of Africa. The male usually digs in large holes in the ground to lure in its female. The Enaultenault’s extremely low reproductive rate makes their populations highly vulnerable.",
     adopted: false,
   },
 ];
