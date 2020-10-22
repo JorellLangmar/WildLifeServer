@@ -47,6 +47,7 @@ router.get("/:id", (req, res, next) => {
 router.patch("/:id", (req, res, next) => {
     const updateUser = req.body;
     console.log(updateUser);
+    console.log(("You're editing the user"));
     User.findByIdAndUpdate(req.params.id, updateUser, {
       new: true,
     })
