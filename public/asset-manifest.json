@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.ab482baf.chunk.css",
-    "main.js": "/static/js/main.e7053741.chunk.js",
-    "main.js.map": "/static/js/main.e7053741.chunk.js.map",
+    "main.css": "/static/css/main.08356c19.chunk.css",
+    "main.js": "/static/js/main.c9d90891.chunk.js",
+    "main.js.map": "/static/js/main.c9d90891.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
     "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
     "static/css/2.bbfe5101.chunk.css": "/static/css/2.bbfe5101.chunk.css",
-    "static/js/2.e449e89d.chunk.js": "/static/js/2.e449e89d.chunk.js",
-    "static/js/2.e449e89d.chunk.js.map": "/static/js/2.e449e89d.chunk.js.map",
+    "static/js/2.9289484f.chunk.js": "/static/js/2.9289484f.chunk.js",
+    "static/js/2.9289484f.chunk.js.map": "/static/js/2.9289484f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3e8f1f3050d422b685b12f1aef589f91.js": "/precache-manifest.3e8f1f3050d422b685b12f1aef589f91.js",
+    "precache-manifest.9f3ad1b09ee0727329ca2861d0662287.js": "/precache-manifest.9f3ad1b09ee0727329ca2861d0662287.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.bbfe5101.chunk.css.map": "/static/css/2.bbfe5101.chunk.css.map",
-    "static/css/main.ab482baf.chunk.css.map": "/static/css/main.ab482baf.chunk.css.map",
-    "static/js/2.e449e89d.chunk.js.LICENSE.txt": "/static/js/2.e449e89d.chunk.js.LICENSE.txt",
+    "static/css/main.08356c19.chunk.css.map": "/static/css/main.08356c19.chunk.css.map",
+    "static/js/2.9289484f.chunk.js.LICENSE.txt": "/static/js/2.9289484f.chunk.js.LICENSE.txt",
     "static/media/profile.css": "/static/media/BackgroundProfile2.7fde7927.jpeg",
     "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/punctualSponsor.css": "/static/media/cheetah.efc1a2e6.jpeg",
     "static/media/createanimals.css": "/static/media/createBackground.3f266c0c.jpeg",
     "static/media/signup.css": "/static/media/elephantBackground.5a7ed0df.jpeg",
     "static/media/home.css": "/static/media/homeBackground.70c8a729.jpeg",
@@ -24,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.09b85ec0.js",
     "static/css/2.bbfe5101.chunk.css",
-    "static/js/2.e449e89d.chunk.js",
-    "static/css/main.ab482baf.chunk.css",
-    "static/js/main.e7053741.chunk.js"
+    "static/js/2.9289484f.chunk.js",
+    "static/css/main.08356c19.chunk.css",
+    "static/js/main.c9d90891.chunk.js"
   ]
 }
