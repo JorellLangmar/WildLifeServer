@@ -1,15 +1,15 @@
 (this.webpackJsonpclient = this.webpackJsonpclient || []).push([
   [0],
   {
-    231: function (e, a, n) {},
-    263: function (e, a, n) {},
-    268: function (e, a, n) {},
-    286: function (e, a, n) {},
-    288: function (e, a, n) {},
-    340: function (e, a, n) {
-      e.exports = n(481);
+    179: function (e, a, n) {},
+    232: function (e, a, n) {},
+    264: function (e, a, n) {},
+    269: function (e, a, n) {},
+    287: function (e, a, n) {},
+    289: function (e, a, n) {},
+    341: function (e, a, n) {
+      e.exports = n(482);
     },
-    473: function (e, a, n) {},
     474: function (e, a, n) {},
     475: function (e, a, n) {},
     476: function (e, a, n) {},
@@ -17,22 +17,23 @@
     478: function (e, a, n) {},
     479: function (e, a, n) {},
     480: function (e, a, n) {},
-    481: function (e, a, n) {
+    481: function (e, a, n) {},
+    482: function (e, a, n) {
       "use strict";
       n.r(a);
       var t = n(0),
-        o = n.n(t),
-        i = n(19),
-        l = n.n(i),
-        r = n(30),
-        c = n(25),
-        s = n(26),
-        m = n(28),
-        u = n(27),
-        d = n(161),
+        l = n.n(t),
+        o = n(19),
+        i = n.n(o),
+        r = n(27),
+        c = n(21),
+        s = n(22),
+        m = n(24),
+        u = n(23),
+        d = n(162),
         p = n.n(d),
         h = p.a.create({
-          baseURL: "https://roarroar.heroku.com",
+          baseURL: "https://roarroar.herokuapp.com",
           withCredentials: !0,
         });
       function b(e) {
@@ -133,17 +134,17 @@
         A = function (e) {
           return h.delete("/api/animal/" + e);
         },
-        O = o.a.createContext(),
+        O = l.a.createContext(),
         R = (function (e) {
           Object(m.a)(n, e);
           var a = Object(u.a)(n);
           function n() {
             var e;
             Object(c.a)(this, n);
-            for (var t = arguments.length, o = new Array(t), i = 0; i < t; i++)
-              o[i] = arguments[i];
+            for (var t = arguments.length, l = new Array(t), o = 0; o < t; o++)
+              l[o] = arguments[o];
             return (
-              ((e = a.call.apply(a, [this].concat(o))).state = {
+              ((e = a.call.apply(a, [this].concat(l))).state = {
                 user: null,
                 isLoggedIn: !1,
                 isLoading: !0,
@@ -189,7 +190,7 @@
                     isLoading: this.state.isLoading,
                     isAdmin: this.state.isAdmin,
                   };
-                  return o.a.createElement(
+                  return l.a.createElement(
                     O.Provider,
                     { value: e },
                     this.props.children
@@ -200,19 +201,19 @@
             n
           );
         })(t.Component),
-        I = n(32),
-        x = function (e) {
+        x = n(32),
+        I = function (e) {
           return function (a) {
-            return o.a.createElement(O.Consumer, null, function (n) {
-              return o.a.createElement(e, Object.assign({}, a, { context: n }));
+            return l.a.createElement(O.Consumer, null, function (n) {
+              return l.a.createElement(e, Object.assign({}, a, { context: n }));
             });
           };
         },
         P = n(169),
-        j = n(131),
-        T = x(function (e) {
+        j = n(132),
+        T = I(function (e) {
           var a = e.context;
-          return o.a.createElement(
+          return l.a.createElement(
             P.a,
             {
               sticky: "top",
@@ -221,38 +222,38 @@
               variant: "light",
               style: { backgroundColor: "transparent" },
             },
-            o.a.createElement(
+            l.a.createElement(
               P.a.Brand,
               { href: "/" },
-              o.a.createElement("img", {
+              l.a.createElement("img", {
                 src:
                   "https://res.cloudinary.com/dxgllmny2/image/upload/v1602864519/roarLogo_vq5loi.png",
                 alt: "Logo-Roar",
                 className: "roarLogo",
-                style: { width: "10vw" },
+                style: { width: "10vw", marginRight:"5%" },
               })
             ),
-            o.a.createElement(P.a.Toggle, {
+            l.a.createElement(P.a.Toggle, {
               "aria-controls": "responsive-navbar-nav",
             }),
-            o.a.createElement(
+            l.a.createElement(
               P.a.Collapse,
               { id: "responsive-navbar-nav" },
-              o.a.createElement(j.a, { className: "mr-auto" }),
-              o.a.createElement(
+              l.a.createElement(j.a, { className: "mr-auto" }),
+              l.a.createElement(
                 j.a,
                 null,
-                o.a.createElement(
+                l.a.createElement(
                   j.a.Link,
                   { eventKey: 4 },
                   a.isAdmin &&
-                    o.a.createElement(
-                      o.a.Fragment,
+                    l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         "li",
                         null,
-                        o.a.createElement(
+                        l.a.createElement(
                           r.c,
                           { to: "/ManageAnimals" },
                           "Manage Animals"
@@ -260,17 +261,17 @@
                       )
                     )
                 ),
-                o.a.createElement(
+                l.a.createElement(
                   j.a.Link,
                   { eventKey: 3 },
                   a.isAdmin &&
-                    o.a.createElement(
-                      o.a.Fragment,
+                    l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         "li",
                         null,
-                        o.a.createElement(
+                        l.a.createElement(
                           r.c,
                           { to: "/CreateAnimals" },
                           "Create Animals"
@@ -278,17 +279,17 @@
                       )
                     )
                 ),
-                o.a.createElement(
+                l.a.createElement(
                   j.a.Link,
                   null,
                   a.isLoggedIn &&
-                    o.a.createElement(
-                      o.a.Fragment,
+                    l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         "li",
                         null,
-                        o.a.createElement(
+                        l.a.createElement(
                           r.c,
                           { to: "/profile" },
                           a.user && a.user.email
@@ -296,27 +297,27 @@
                       )
                     ),
                   !a.isLoggedIn &&
-                    o.a.createElement(
-                      o.a.Fragment,
+                    l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         "li",
                         null,
-                        o.a.createElement(r.c, { to: "/signin" }, "Log in")
+                        l.a.createElement(r.c, { to: "/signin" }, "Log in")
                       )
                     )
                 ),
-                o.a.createElement(
+                l.a.createElement(
                   j.a.Link,
                   { eventKey: 2 },
                   !a.isLoggedIn &&
-                    o.a.createElement(
-                      o.a.Fragment,
+                    l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         "li",
                         null,
-                        o.a.createElement(
+                        l.a.createElement(
                           r.c,
                           { to: "/signup" },
                           "Create account"
@@ -324,13 +325,13 @@
                       )
                     ),
                   a.isLoggedIn &&
-                    o.a.createElement(
-                      o.a.Fragment,
+                    l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         "li",
                         null,
-                        o.a.createElement(
+                        l.a.createElement(
                           "p",
                           {
                             onClick: function () {
@@ -352,33 +353,6 @@
             )
           );
         }),
-        D = (function (e) {
-          Object(m.a)(n, e);
-          var a = Object(u.a)(n);
-          function n() {
-            return Object(c.a)(this, n), a.apply(this, arguments);
-          }
-          return (
-            Object(s.a)(n, [
-              {
-                key: "render",
-                value: function () {
-                  return o.a.createElement(
-                    "div",
-                    { className: "whatwedo" },
-                    o.a.createElement("h1", null, "What we do :"),
-                    o.a.createElement(
-                      "p",
-                      null,
-                      "R.O.A.R. (Reach Out And Rescue) is a conservation charity dedicated to rescuing and preserving the wildlife of Namibia. Originating as a small wildlife sanctuary nestled in the Namibian bush, R.O.A.R. is now a world-famous conservation organisation. The R.O.A.R. Sanctuary provides a safe haven and second chance for countless injured, orphaned and conflict animals. Wherever possible our aim is to release animals back into the wild. Our mission is to conserve the land, cultures and wildlife of Namibia, Africa. We aim to achieve this through encouraging participation, education and scientific research."
-                    )
-                  );
-                },
-              },
-            ]),
-            n
-          );
-        })(t.Component),
         M = (function (e) {
           Object(m.a)(n, e);
           var a = Object(u.a)(n);
@@ -390,42 +364,69 @@
               {
                 key: "render",
                 value: function () {
-                  return o.a.createElement(
+                  return l.a.createElement(
+                    "div",
+                    { className: "whatwedo" },
+                    l.a.createElement("h1", null, "What we do :"),
+                    l.a.createElement(
+                      "p",
+                      null,
+                      "R.O.A.R. (Reach Out And Rescue) is a conservation charity dedicated to rescuing and preserving the wildlife of Namibia. Originating as a small wildlife sanctuary nestled in the Namibian bush, R.O.A.R. is now a world-famous conservation organisation. The R.O.A.R. Sanctuary provides a safe haven and second chance for countless injured, orphaned and conflict animals. Wherever possible our aim is to release animals back into the wild. Our mission is to conserve the land, cultures and wildlife of Namibia, Africa. We aim to achieve this through encouraging participation, education and scientific research."
+                    )
+                  );
+                },
+              },
+            ]),
+            n
+          );
+        })(t.Component),
+        D = (function (e) {
+          Object(m.a)(n, e);
+          var a = Object(u.a)(n);
+          function n() {
+            return Object(c.a)(this, n), a.apply(this, arguments);
+          }
+          return (
+            Object(s.a)(n, [
+              {
+                key: "render",
+                value: function () {
+                  return l.a.createElement(
                     "div",
                     { className: "kpis" },
-                    o.a.createElement(
+                    l.a.createElement(
                       "div",
                       { className: "wrapper" },
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         { class: "kpi" },
-                        o.a.createElement("span", { className: "num" }, "247"),
-                        o.a.createElement("br", null),
+                        l.a.createElement("span", { className: "num" }, "247"),
+                        l.a.createElement("br", null),
                         "animals have been rescued by R.O.A.R. since its creation."
                       ),
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         { class: "kpi" },
-                        o.a.createElement("span", { className: "num" }, "44"),
-                        o.a.createElement("br", null),
+                        l.a.createElement("span", { className: "num" }, "44"),
+                        l.a.createElement("br", null),
                         "staff members work tirelessly at the Sanctuary all year round."
                       ),
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         { class: "kpi" },
-                        o.a.createElement("span", { className: "num" }, "36"),
-                        o.a.createElement("br", null),
+                        l.a.createElement("span", { className: "num" }, "36"),
+                        l.a.createElement("br", null),
                         "different wildlife species have been taken care of at the Sanctuary."
                       ),
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         { class: "kpi" },
-                        o.a.createElement(
+                        l.a.createElement(
                           "span",
                           { className: "num" },
                           "37,568"
                         ),
-                        o.a.createElement("br", null),
+                        l.a.createElement("br", null),
                         "donators helped us last year through sponsorships and adoptions."
                       )
                     )
@@ -436,10 +437,10 @@
             n
           );
         })(t.Component),
-        L = n(166),
-        F = n(570),
+        L = n(116),
+        F = n(571),
         B =
-          (n(263),
+          (n(264),
           (function (e) {
             Object(m.a)(n, e);
             var a = Object(u.a)(n);
@@ -447,13 +448,13 @@
               var e;
               Object(c.a)(this, n);
               for (
-                var t = arguments.length, o = new Array(t), i = 0;
-                i < t;
-                i++
+                var t = arguments.length, l = new Array(t), o = 0;
+                o < t;
+                o++
               )
-                o[i] = arguments[i];
+                l[o] = arguments[o];
               return (
-                ((e = a.call.apply(a, [this].concat(o))).state = {
+                ((e = a.call.apply(a, [this].concat(l))).state = {
                   species: [],
                   animals: [],
                   animalcheck: [],
@@ -478,28 +479,28 @@
                   var t = n.value;
                   Object(L.a)(e.state.animalcheck);
                   if (!e.state.animalcheck.includes(t)) {
-                    var o = Object(L.a)(e.state.animalcheck);
+                    var l = Object(L.a)(e.state.animalcheck);
                     return (
-                      o.push(t),
-                      e.setState({ animalcheck: o }),
-                      S("".concat(o))
+                      l.push(t),
+                      e.setState({ animalcheck: l }),
+                      S("".concat(l))
                         .then(function (a) {
                           e.setState({ animals: a });
                         })
                         .catch(function (e) {
                           console.log(e);
                         }),
-                      o
+                      l
                     );
                   }
-                  var i = e.state.animalcheck.filter(function (e) {
+                  var o = e.state.animalcheck.filter(function (e) {
                     return e !== t;
                   });
-                  0 === i.length && (i = e.state.species),
-                    console.log(i),
-                    console.log(i.length),
-                    e.setState({ animalcheck: i }),
-                    S("".concat(i))
+                  0 === o.length && (o = e.state.species),
+                    console.log(o),
+                    console.log(o.length),
+                    e.setState({ animalcheck: o }),
+                    S("".concat(o))
                       .then(function (a) {
                         e.setState({ animals: a });
                       })
@@ -516,10 +517,10 @@
                   key: "render",
                   value: function () {
                     var e = this;
-                    return o.a.createElement(
+                    return l.a.createElement(
                       "div",
                       { className: "Filter-Animals" },
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         {
                           style: {
@@ -528,21 +529,21 @@
                             margin: "3% 0%",
                           },
                         },
-                        o.a.createElement(
+                        l.a.createElement(
                           "ul",
                           {
                             class: "nav nav-pills nav-fill",
                             "data-toggle": "pill",
                           },
                           this.state.species.map(function (a, n) {
-                            return o.a.createElement(
+                            return l.a.createElement(
                               "li",
                               {
                                 class: "nav-item",
                                 "data-toggle": "pill",
                                 style: { color: "white" },
                               },
-                              o.a.createElement(F.a, {
+                              l.a.createElement(F.a, {
                                 value: a,
                                 onChange: e.handleCheck,
                               }),
@@ -552,30 +553,30 @@
                           })
                         )
                       ),
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         { className: "animalGrid" },
                         this.state.animals.map(function (e) {
-                          return o.a.createElement(
+                          return l.a.createElement(
                             "div",
                             { className: "animalCards" },
-                            o.a.createElement("img", {
+                            l.a.createElement("img", {
                               src: e.profileImage,
                               alt: "Animal Portrait",
                               className: "animalPhoto",
                             }),
-                            o.a.createElement(
+                            l.a.createElement(
                               "h2",
                               { className: "animalName" },
                               e.name
                             ),
-                            o.a.createElement(
+                            l.a.createElement(
                               "div",
                               { class: "overlay" },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "div",
                                 { class: "text-overlay" },
-                                o.a.createElement(
+                                l.a.createElement(
                                   r.b,
                                   {
                                     to: "/".concat(e._id),
@@ -595,7 +596,7 @@
               ]),
               n
             );
-          })(o.a.Component)),
+          })(l.a.Component)),
         G = (function (e) {
           Object(m.a)(n, e);
           var a = Object(u.a)(n);
@@ -607,34 +608,34 @@
               {
                 key: "render",
                 value: function () {
-                  return o.a.createElement(
+                  return l.a.createElement(
                     "div",
                     null,
-                    o.a.createElement(
+                    l.a.createElement(
                       "div",
                       { className: "home" },
-                      o.a.createElement(T, null),
-                      o.a.createElement(
+                      l.a.createElement(T, null),
+                      l.a.createElement(
                         "div",
                         { "data-aos": "fade-up" },
-                        o.a.createElement("h1", null, "R.O.A.R."),
-                        o.a.createElement("h2", null, "Reach Out And Rescue")
+                        l.a.createElement("h1", null, "R.O.A.R."),
+                        l.a.createElement("h2", null, "Reach Out And Rescue")
                       )
                     ),
-                    o.a.createElement(
+                    l.a.createElement(
                       "div",
                       { "data-aos": "fade-up" },
-                      o.a.createElement(D, null)
+                      l.a.createElement(M, null)
                     ),
-                    o.a.createElement(
+                    l.a.createElement(
                       "div",
                       { "data-aos": "fade-up" },
-                      o.a.createElement(M, null)
+                      l.a.createElement(D, null)
                     ),
-                    o.a.createElement(
+                    l.a.createElement(
                       "div",
                       { "data-aos": "fade-up" },
-                      o.a.createElement(B, null)
+                      l.a.createElement(B, null)
                     )
                   );
                 },
@@ -642,10 +643,10 @@
             ]),
             n
           );
-        })(o.a.Component),
+        })(l.a.Component),
         K = n(72),
         U =
-          (n(231),
+          (n(232),
           (function (e) {
             Object(m.a)(n, e);
             var a = Object(u.a)(n);
@@ -653,13 +654,13 @@
               var e;
               Object(c.a)(this, n);
               for (
-                var t = arguments.length, o = new Array(t), i = 0;
-                i < t;
-                i++
+                var t = arguments.length, l = new Array(t), o = 0;
+                o < t;
+                o++
               )
-                o[i] = arguments[i];
+                l[o] = arguments[o];
               return (
-                ((e = a.call.apply(a, [this].concat(o))).state = {
+                ((e = a.call.apply(a, [this].concat(l))).state = {
                   email: "",
                   password: "",
                 }),
@@ -691,36 +692,36 @@
                 {
                   key: "render",
                   value: function () {
-                    return o.a.createElement(
+                    return l.a.createElement(
                       "form",
                       {
                         onChange: this.handleChange,
                         onSubmit: this.handleSubmit,
                         className: "signinForm",
                       },
-                      o.a.createElement(
+                      l.a.createElement(
                         "label",
                         { htmlFor: "email", className: "formSI" },
                         "Email"
                       ),
-                      o.a.createElement("input", {
+                      l.a.createElement("input", {
                         type: "email",
                         id: "email",
                         name: "email",
                         className: "formSI2",
                       }),
-                      o.a.createElement(
+                      l.a.createElement(
                         "label",
                         { htmlFor: "password", className: "formSI" },
                         "Password"
                       ),
-                      o.a.createElement("input", {
+                      l.a.createElement("input", {
                         type: "password",
                         id: "password",
                         name: "password",
                         className: "formSI2",
                       }),
-                      o.a.createElement(
+                      l.a.createElement(
                         "button",
                         { className: "sub-btn" },
                         "Submit"
@@ -733,21 +734,21 @@
             );
           })(t.Component));
       U.contextType = O;
-      var H = Object(I.g)(U),
+      var H = Object(x.g)(U),
         V = function (e) {
-          return o.a.createElement(
+          return l.a.createElement(
             "div",
             { className: "signinPage" },
-            o.a.createElement(T, null),
-            o.a.createElement(H, null)
+            l.a.createElement(T, null),
+            l.a.createElement(H, null)
           );
         },
-        W = n(553),
-        z = n(559),
-        Y = n(243),
-        $ = n(561),
-        Z =
-          (n(268),
+        W = n(554),
+        z = n(560),
+        Y = n(244),
+        $ = n(562),
+        q =
+          (n(269),
           (function (e) {
             Object(m.a)(n, e);
             var a = Object(u.a)(n);
@@ -755,13 +756,13 @@
               var e;
               Object(c.a)(this, n);
               for (
-                var t = arguments.length, o = new Array(t), i = 0;
-                i < t;
-                i++
+                var t = arguments.length, l = new Array(t), o = 0;
+                o < t;
+                o++
               )
-                o[i] = arguments[i];
+                l[o] = arguments[o];
               return (
-                ((e = a.call.apply(a, [this].concat(o))).state = {
+                ((e = a.call.apply(a, [this].concat(l))).state = {
                   componentSize: "default",
                   email: "",
                   password: "",
@@ -799,10 +800,10 @@
                 {
                   key: "render",
                   value: function () {
-                    return o.a.createElement(
-                      o.a.Fragment,
+                    return l.a.createElement(
+                      l.a.Fragment,
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         W.a,
                         {
                           labelCol: { span: 4 },
@@ -814,19 +815,19 @@
                           onChange: this.handleChange,
                           style: { paddingLeft: "50%", paddingTop: "10%" },
                         },
-                        o.a.createElement(
+                        l.a.createElement(
                           W.a.Item,
                           { label: "", style: { fontSize: "150%" } },
                           "First Name",
-                          o.a.createElement(z.a, { name: "firstname" })
+                          l.a.createElement(z.a, { name: "firstname" })
                         ),
-                        o.a.createElement(
+                        l.a.createElement(
                           W.a.Item,
                           { label: "", style: { fontSize: "150%" } },
                           "Last Name",
-                          o.a.createElement(z.a, { name: "lastname" })
+                          l.a.createElement(z.a, { name: "lastname" })
                         ),
-                        o.a.createElement(
+                        l.a.createElement(
                           W.a.Item,
                           {
                             label: "",
@@ -834,9 +835,9 @@
                             rules: [{ type: "email" }],
                           },
                           "Email",
-                          o.a.createElement(z.a, { name: "email" })
+                          l.a.createElement(z.a, { name: "email" })
                         ),
-                        o.a.createElement(
+                        l.a.createElement(
                           W.a.Item,
                           {
                             label: "",
@@ -844,19 +845,19 @@
                             rules: [{ type: "password" }],
                           },
                           "Password",
-                          o.a.createElement(z.a, {
+                          l.a.createElement(z.a, {
                             name: "password",
-                            prefix: o.a.createElement($.a, {
+                            prefix: l.a.createElement($.a, {
                               className: "site-form-item-icon",
                             }),
                             type: "password",
                             placeholder: "Password",
                           })
                         ),
-                        o.a.createElement(
+                        l.a.createElement(
                           W.a.Item,
                           { label: "" },
-                          o.a.createElement(
+                          l.a.createElement(
                             Y.a,
                             { onClick: this.handleSubmit },
                             "Submit"
@@ -869,48 +870,48 @@
               ]),
               n
             );
-          })(o.a.Component));
-      Z.contextType = O;
-      var q = Object(I.g)(Z),
+          })(l.a.Component));
+      q.contextType = O;
+      var Z = Object(x.g)(q),
         J = function (e) {
-          return o.a.createElement(
+          return l.a.createElement(
             "div",
             { className: "signupPage" },
-            o.a.createElement(T, null),
-            o.a.createElement(q, null)
+            l.a.createElement(T, null),
+            l.a.createElement(Z, null)
           );
         },
-        Q = n(219),
-        X = x(function (e) {
+        Q = n(220),
+        X = I(function (e) {
           var a = e.component,
             n = e.context,
             t = Object(Q.a)(e, ["component", "context"]);
           return n.isLoading
             ? null
             : n.isLoggedIn
-            ? o.a.createElement(
-                I.b,
+            ? l.a.createElement(
+                x.b,
                 Object.assign({}, t, {
                   render: function (e) {
-                    return o.a.createElement(a, e);
+                    return l.a.createElement(a, e);
                   },
                 })
               )
-            : o.a.createElement(I.a, { to: "/signin" });
+            : l.a.createElement(x.a, { to: "/signin" });
         }),
-        ee = (n(286), n(558)),
-        ae = n(555),
-        ne = n(567),
+        ee = (n(287), n(559)),
+        ae = n(556),
+        ne = n(568),
         te = (function (e) {
           Object(m.a)(n, e);
           var a = Object(u.a)(n);
           function n() {
             var e;
             Object(c.a)(this, n);
-            for (var t = arguments.length, o = new Array(t), i = 0; i < t; i++)
-              o[i] = arguments[i];
+            for (var t = arguments.length, l = new Array(t), o = 0; o < t; o++)
+              l[o] = arguments[o];
             return (
-              ((e = a.call.apply(a, [this].concat(o))).state = {
+              ((e = a.call.apply(a, [this].concat(l))).state = {
                 activeItem: "Favorites",
                 sponsored: e.context.user.sponsoring,
                 adopted: e.context.user.adoption,
@@ -967,46 +968,46 @@
               {
                 key: "render",
                 value: function () {
-                  return o.a.createElement(
+                  return l.a.createElement(
                     "div",
                     { className: "profilePage" },
-                    o.a.createElement(T, null),
-                    o.a.createElement(
+                    l.a.createElement(T, null),
+                    l.a.createElement(
                       ee.a.Group,
                       { style: { margin: "5vh 5vw" } },
-                      o.a.createElement(
+                      l.a.createElement(
                         ee.a,
                         null,
-                        o.a.createElement(ee.a.Image, {
+                        l.a.createElement(ee.a.Image, {
                           size: "small",
                           src:
                             "https://res.cloudinary.com/dxgllmny2/image/upload/v1603200377/clipart1717870_dcec3q.png",
                           alt: "",
                         }),
-                        o.a.createElement(
+                        l.a.createElement(
                           ee.a.Content,
                           null,
-                          o.a.createElement(
+                          l.a.createElement(
                             ee.a.Header,
                             { as: "a", style: { fontSize: "250%" } },
                             this.context.user.firstname,
                             " ",
                             this.context.user.lastname
                           ),
-                          o.a.createElement(
+                          l.a.createElement(
                             ee.a.Description,
                             { style: { fontSize: "150%" } },
-                            o.a.createElement(
+                            l.a.createElement(
                               "p",
                               null,
                               this.context.user.email
                             ),
-                            o.a.createElement(
+                            l.a.createElement(
                               "p",
                               null,
                               this.context.user.adress
                             ),
-                            o.a.createElement(
+                            l.a.createElement(
                               "p",
                               null,
                               this.context.user.phone
@@ -1015,10 +1016,10 @@
                         )
                       )
                     ),
-                    o.a.createElement(
+                    l.a.createElement(
                       "div",
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         ae.a,
                         {
                           pointing: !0,
@@ -1028,23 +1029,23 @@
                             background: "transparent",
                           },
                         },
-                        o.a.createElement(ae.a.Item, {
+                        l.a.createElement(ae.a.Item, {
                           name: "Favorites",
                           active: "Favorites" === this.state.activeItem,
                           onClick: this.handleItemClick,
                         }),
-                        o.a.createElement(ae.a.Item, {
+                        l.a.createElement(ae.a.Item, {
                           name: "Adopted",
                           active: "Adopted" === this.state.activeItem,
                           onClick: this.handleItemClick,
                         }),
-                        o.a.createElement(ae.a.Item, {
+                        l.a.createElement(ae.a.Item, {
                           name: "Sponsored",
                           active: "Sponsored" === this.state.activeItem,
                           onClick: this.handleItemClick,
                         })
                       ),
-                      o.a.createElement(
+                      l.a.createElement(
                         ne.a,
                         {
                           style: {
@@ -1052,30 +1053,30 @@
                             background: "transparent",
                           },
                         },
-                        o.a.createElement(
+                        l.a.createElement(
                           "div",
                           { className: "animalGridProfile" },
                           this.state.favoriteDisplay.map(function (e, a) {
-                            return o.a.createElement(
+                            return l.a.createElement(
                               "div",
                               { key: a, className: "animalCardsProfile" },
-                              o.a.createElement("img", {
+                              l.a.createElement("img", {
                                 src: e.profileImage,
                                 alt: "Animal Portrait",
                                 className: "animalPhotoProfile",
                               }),
-                              o.a.createElement(
+                              l.a.createElement(
                                 "h2",
                                 { className: "animalNameProfile" },
                                 e.name
                               ),
-                              o.a.createElement(
+                              l.a.createElement(
                                 "div",
                                 { className: "overlayProfile" },
-                                o.a.createElement(
+                                l.a.createElement(
                                   "div",
                                   { className: "text-overlayProfile" },
-                                  o.a.createElement(
+                                  l.a.createElement(
                                     r.b,
                                     {
                                       to: "/".concat(e._id),
@@ -1097,13 +1098,13 @@
             ]),
             n
           );
-        })(o.a.Component);
+        })(l.a.Component);
       te.contextType = O;
-      var oe = x(te),
-        ie = n(306),
-        le = n.n(ie),
-        re = (n(469), n(470), n(471), n(472), n(552)),
-        ce = n(563),
+      var le = I(te),
+        oe = n(307),
+        ie = n.n(oe),
+        re = (n(470), n(471), n(472), n(473), n(553)),
+        ce = n(564),
         se = [
           { key: "m", text: "Male", value: "Male" },
           { key: "f", text: "Female", value: "Female" },
@@ -1114,10 +1115,10 @@
           function n() {
             var e;
             Object(c.a)(this, n);
-            for (var t = arguments.length, o = new Array(t), i = 0; i < t; i++)
-              o[i] = arguments[i];
+            for (var t = arguments.length, l = new Array(t), o = 0; o < t; o++)
+              l[o] = arguments[o];
             return (
-              ((e = a.call.apply(a, [this].concat(o))).state = {
+              ((e = a.call.apply(a, [this].concat(l))).state = {
                 name: "",
                 profileImage: "",
                 age: "",
@@ -1177,9 +1178,9 @@
                         console.log(e);
                       });
                 } else {
-                  var o = new FormData();
-                  for (var i in e.state) o.append(i, e.state[i]);
-                  _(o)
+                  var l = new FormData();
+                  for (var o in e.state) l.append(o, e.state[o]);
+                  _(l)
                     .then(function () {
                       e.props.history.push("/");
                     })
@@ -1196,16 +1197,16 @@
               {
                 key: "render",
                 value: function () {
-                  return o.a.createElement(
+                  return l.a.createElement(
                     "div",
                     null,
-                    o.a.createElement(
+                    l.a.createElement(
                       re.a,
                       { style: { padding: "15%" } },
-                      o.a.createElement(
+                      l.a.createElement(
                         re.a.Group,
                         { widths: "equal" },
-                        o.a.createElement(re.a.Input, {
+                        l.a.createElement(re.a.Input, {
                           fluid: !0,
                           label: "Name",
                           placeholder: "Name",
@@ -1213,7 +1214,7 @@
                           onChange: this.handleChange,
                           value: this.state.name,
                         }),
-                        o.a.createElement(re.a.Input, {
+                        l.a.createElement(re.a.Input, {
                           fluid: !0,
                           label: "Age",
                           placeholder: "Age",
@@ -1221,7 +1222,7 @@
                           onChange: this.handleChange,
                           value: this.state.age,
                         }),
-                        o.a.createElement(re.a.Input, {
+                        l.a.createElement(re.a.Input, {
                           fluid: !0,
                           label: "Specie",
                           placeholder: "Specie",
@@ -1229,7 +1230,7 @@
                           onChange: this.handleChange,
                           value: this.state.specie,
                         }),
-                        o.a.createElement(re.a.Select, {
+                        l.a.createElement(re.a.Select, {
                           fluid: !0,
                           label: "Gender",
                           options: se,
@@ -1239,18 +1240,18 @@
                           value: this.state.gender,
                         })
                       ),
-                      o.a.createElement(
+                      l.a.createElement(
                         re.a.Group,
                         { inline: !0 },
-                        o.a.createElement("label", null, "Conservation Status"),
-                        o.a.createElement(re.a.Radio, {
+                        l.a.createElement("label", null, "Conservation Status"),
+                        l.a.createElement(re.a.Radio, {
                           label: "Critical",
                           value: "Critical",
                           checked: "Critical" === this.state.ConservationStatus,
                           name: "ConservationStatus",
                           onChange: this.handleRadioChange,
                         }),
-                        o.a.createElement(re.a.Radio, {
+                        l.a.createElement(re.a.Radio, {
                           label: "Vulnerable",
                           value: "Vulnerable",
                           checked:
@@ -1258,7 +1259,7 @@
                           name: "ConservationStatus",
                           onChange: this.handleRadioChange,
                         }),
-                        o.a.createElement(re.a.Radio, {
+                        l.a.createElement(re.a.Radio, {
                           label: "Least Concerned",
                           value: "Least Concerned",
                           checked:
@@ -1266,7 +1267,7 @@
                           name: "ConservationStatus",
                           onChange: this.handleRadioChange,
                         }),
-                        o.a.createElement(re.a.Radio, {
+                        l.a.createElement(re.a.Radio, {
                           label: "Near Threatened",
                           value: "Near Threatened",
                           checked:
@@ -1274,7 +1275,7 @@
                           name: "ConservationStatus",
                           onChange: this.handleRadioChange,
                         }),
-                        o.a.createElement(re.a.Radio, {
+                        l.a.createElement(re.a.Radio, {
                           label: "Data Deficient",
                           value: "Data Deficient",
                           checked:
@@ -1282,7 +1283,7 @@
                           name: "ConservationStatus",
                           onChange: this.handleRadioChange,
                         }),
-                        o.a.createElement(re.a.Radio, {
+                        l.a.createElement(re.a.Radio, {
                           label: "Endangered",
                           value: "Endangered",
                           checked:
@@ -1291,26 +1292,26 @@
                           onChange: this.handleRadioChange,
                         })
                       ),
-                      o.a.createElement(re.a.TextArea, {
+                      l.a.createElement(re.a.TextArea, {
                         label: "Description",
                         placeholder: "Tell us more about our new companion...",
                         onChange: this.handleChange,
                         name: "description",
                         value: this.state.description,
                       }),
-                      o.a.createElement(
+                      l.a.createElement(
                         ce.a,
                         { as: "label", htmlFor: "file", type: "button" },
                         "Upload a cute face"
                       ),
-                      o.a.createElement(re.a.Input, {
+                      l.a.createElement(re.a.Input, {
                         type: "file",
                         id: "file",
                         style: { visibility: "hidden" },
                         onChange: this.handleChange,
                         name: "profileImage",
                       }),
-                      o.a.createElement(
+                      l.a.createElement(
                         re.a.Button,
                         { onClick: this.handleSubmit },
                         "Submit"
@@ -1323,7 +1324,7 @@
             n
           );
         })(t.Component),
-        ue = Object(I.g)(me),
+        ue = Object(x.g)(me),
         de = (function (e) {
           Object(m.a)(n, e);
           var a = Object(u.a)(n);
@@ -1335,42 +1336,42 @@
               {
                 key: "render",
                 value: function () {
-                  return o.a.createElement(
+                  return l.a.createElement(
                     "div",
                     { className: "createanimals" },
-                    o.a.createElement(T, null),
-                    o.a.createElement("div", null, o.a.createElement(ue, null))
+                    l.a.createElement(T, null),
+                    l.a.createElement("div", null, l.a.createElement(ue, null))
                   );
                 },
               },
             ]),
             n
           );
-        })(o.a.Component),
+        })(l.a.Component),
         pe = function (e) {
-          return o.a.createElement(
+          return l.a.createElement(
             "div",
             { className: "createanimals" },
-            o.a.createElement(T, null),
-            o.a.createElement(
+            l.a.createElement(T, null),
+            l.a.createElement(
               "div",
               null,
-              o.a.createElement(ue, { action: "edit", id: e.match.params.id })
+              l.a.createElement(ue, { action: "edit", id: e.match.params.id })
             )
           );
         },
-        he = n(560),
-        be = n(158),
+        he = n(561),
+        be = n(159),
         ge = (function (e) {
           Object(m.a)(n, e);
           var a = Object(u.a)(n);
           function n() {
             var e;
             Object(c.a)(this, n);
-            for (var t = arguments.length, o = new Array(t), i = 0; i < t; i++)
-              o[i] = arguments[i];
+            for (var t = arguments.length, l = new Array(t), o = 0; o < t; o++)
+              l[o] = arguments[o];
             return (
-              ((e = a.call.apply(a, [this].concat(o))).state = { animals: [] }),
+              ((e = a.call.apply(a, [this].concat(l))).state = { animals: [] }),
               (e.componentDidMount = function () {
                 E("/")
                   .then(function (a) {
@@ -1395,62 +1396,62 @@
                 key: "render",
                 value: function () {
                   var e = this;
-                  return o.a.createElement(
+                  return l.a.createElement(
                     "div",
                     null,
-                    o.a.createElement(T, null),
-                    o.a.createElement(
+                    l.a.createElement(T, null),
+                    l.a.createElement(
                       "div",
                       { className: "table-manage" },
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         null,
-                        o.a.createElement(
+                        l.a.createElement(
                           he.a,
                           { celled: !0, compact: !0, definition: !0 },
-                          o.a.createElement(
+                          l.a.createElement(
                             he.a.Header,
                             { fullWidth: !0 },
-                            o.a.createElement(
+                            l.a.createElement(
                               he.a.Row,
                               null,
-                              o.a.createElement(he.a.HeaderCell, null),
-                              o.a.createElement(
+                              l.a.createElement(he.a.HeaderCell, null),
+                              l.a.createElement(
                                 he.a.HeaderCell,
                                 null,
                                 "Profile Image"
                               ),
-                              o.a.createElement(he.a.HeaderCell, null, "Name"),
-                              o.a.createElement(
+                              l.a.createElement(he.a.HeaderCell, null, "Name"),
+                              l.a.createElement(
                                 he.a.HeaderCell,
                                 null,
                                 "Description"
                               ),
-                              o.a.createElement(he.a.HeaderCell, null, "Edit")
+                              l.a.createElement(he.a.HeaderCell, null, "Edit")
                             )
                           ),
-                          o.a.createElement(
+                          l.a.createElement(
                             he.a.Body,
                             null,
                             this.state.animals.map(function (a, n) {
-                              return o.a.createElement(
+                              return l.a.createElement(
                                 he.a.Row,
                                 { key: n },
-                                o.a.createElement(
+                                l.a.createElement(
                                   he.a.Cell,
                                   { collapsing: !0 },
-                                  o.a.createElement(be.a, {
+                                  l.a.createElement(be.a, {
                                     onClick: function () {
                                       return e.deleteAnimal(a._id);
                                     },
                                     name: "trash alternate",
                                   })
                                 ),
-                                o.a.createElement(
+                                l.a.createElement(
                                   he.a.Cell,
                                   { style: { width: "20%" } },
                                   " ",
-                                  o.a.createElement("img", {
+                                  l.a.createElement("img", {
                                     style: {
                                       width: "100%",
                                       borderRadius: "10px",
@@ -1459,36 +1460,36 @@
                                     alt: "animal",
                                   })
                                 ),
-                                o.a.createElement(he.a.Cell, null, a.name),
-                                o.a.createElement(
+                                l.a.createElement(he.a.Cell, null, a.name),
+                                l.a.createElement(
                                   he.a.Cell,
                                   null,
                                   a.description
                                 ),
-                                o.a.createElement(
+                                l.a.createElement(
                                   he.a.Cell,
                                   null,
                                   " ",
-                                  o.a.createElement(
+                                  l.a.createElement(
                                     r.b,
                                     { to: "/Animals/".concat(a._id, "/edit") },
-                                    o.a.createElement(be.a, { name: "edit" })
+                                    l.a.createElement(be.a, { name: "edit" })
                                   )
                                 )
                               );
                             })
                           ),
-                          o.a.createElement(
+                          l.a.createElement(
                             he.a.Footer,
                             { fullWidth: !0 },
-                            o.a.createElement(
+                            l.a.createElement(
                               he.a.Row,
                               null,
-                              o.a.createElement(he.a.HeaderCell, null),
-                              o.a.createElement(
+                              l.a.createElement(he.a.HeaderCell, null),
+                              l.a.createElement(
                                 he.a.HeaderCell,
                                 { colSpan: "4" },
-                                o.a.createElement(
+                                l.a.createElement(
                                   ce.a,
                                   {
                                     floated: "right",
@@ -1497,9 +1498,9 @@
                                     primary: !0,
                                     size: "small",
                                   },
-                                  o.a.createElement(be.a, { name: "user" }),
+                                  l.a.createElement(be.a, { name: "user" }),
                                   " ",
-                                  o.a.createElement(
+                                  l.a.createElement(
                                     "a",
                                     { href: "/Createanimals" },
                                     "Add Animal"
@@ -1518,9 +1519,9 @@
             n
           );
         })(t.Component),
-        ye = n(568),
+        ye = n(569),
         fe =
-          (n(288),
+          (n(289),
           (function (e) {
             Object(m.a)(n, e);
             var a = Object(u.a)(n);
@@ -1528,13 +1529,13 @@
               var e;
               Object(c.a)(this, n);
               for (
-                var t = arguments.length, o = new Array(t), i = 0;
-                i < t;
-                i++
+                var t = arguments.length, l = new Array(t), o = 0;
+                o < t;
+                o++
               )
-                o[i] = arguments[i];
+                l[o] = arguments[o];
               return (
-                ((e = a.call.apply(a, [this].concat(o))).state = {
+                ((e = a.call.apply(a, [this].concat(l))).state = {
                   animal: "",
                   color: "",
                 }),
@@ -1583,70 +1584,70 @@
                   key: "render",
                   value: function () {
                     var e = this;
-                    return o.a.createElement(
+                    return l.a.createElement(
                       "div",
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         { className: "animalDetails" },
-                        o.a.createElement(
+                        l.a.createElement(
                           ye.a,
-                          null,
-                          o.a.createElement(
+                          { stackable: !0, columns: 3 },
+                          l.a.createElement(
                             ye.a.Column,
                             { width: 4 },
-                            o.a.createElement("img", {
+                            l.a.createElement("img", {
                               src: this.state.animal.profileImage,
                               alt: "Animal Portrait",
                               className: "animalPortrait",
                             })
                           ),
-                          o.a.createElement(
+                          l.a.createElement(
                             ye.a.Column,
                             { width: 9 },
-                            o.a.createElement(
+                            l.a.createElement(
                               "div",
                               { className: "mid-part" },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "h2",
                                 { className: "name" },
                                 this.state.animal.name
                               ),
-                              o.a.createElement(
+                              l.a.createElement(
                                 "div",
                                 { className: "ani-id" },
-                                o.a.createElement(
+                                l.a.createElement(
                                   "div",
                                   { className: "specie" },
-                                  o.a.createElement(
+                                  l.a.createElement(
                                     "p",
                                     null,
-                                    o.a.createElement(
+                                    l.a.createElement(
                                       "span",
                                       { className: "bold" },
                                       "Specie :"
                                     )
                                   ),
-                                  o.a.createElement(
+                                  l.a.createElement(
                                     "p",
                                     null,
                                     this.state.animal.specie
                                   )
                                 )
                               ),
-                              o.a.createElement(
+                              l.a.createElement(
                                 "div",
                                 { className: "ani-id desc" },
-                                o.a.createElement(
+                                l.a.createElement(
                                   "p",
                                   null,
-                                  o.a.createElement(
+                                  l.a.createElement(
                                     "span",
                                     { className: "bold" },
                                     "About :"
                                   )
                                 ),
-                                o.a.createElement(
+                                l.a.createElement(
                                   "p",
                                   null,
                                   this.state.animal.description
@@ -1654,11 +1655,11 @@
                               )
                             )
                           ),
-                          o.a.createElement(
+                          l.a.createElement(
                             ye.a.Column,
                             { width: 3 },
                             this.context.isLoggedIn &&
-                              o.a.createElement(be.a, {
+                              l.a.createElement(be.a, {
                                 style: { cursor: "pointer" },
                                 name: "heart",
                                 className: "iconHeart",
@@ -1667,55 +1668,55 @@
                                   return e.handleFavorite();
                                 },
                               }),
-                            o.a.createElement(
+                            l.a.createElement(
                               "div",
                               { className: "ani-id" },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "p",
                                 null,
-                                o.a.createElement(
+                                l.a.createElement(
                                   "span",
                                   { className: "bold" },
                                   "Age :"
                                 )
                               ),
-                              o.a.createElement(
+                              l.a.createElement(
                                 "p",
                                 null,
                                 this.state.animal.age
                               )
                             ),
-                            o.a.createElement(
+                            l.a.createElement(
                               "div",
                               { className: "ani-id" },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "p",
                                 null,
-                                o.a.createElement(
+                                l.a.createElement(
                                   "span",
                                   { className: "bold" },
                                   "Gender :"
                                 )
                               ),
-                              o.a.createElement(
+                              l.a.createElement(
                                 "p",
                                 null,
                                 this.state.animal.gender
                               )
                             ),
-                            o.a.createElement(
+                            l.a.createElement(
                               "div",
                               { className: "ani-id" },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "p",
                                 null,
-                                o.a.createElement(
+                                l.a.createElement(
                                   "span",
                                   { className: "bold" },
                                   "Conservation Status :"
                                 )
                               ),
-                              o.a.createElement(
+                              l.a.createElement(
                                 "p",
                                 null,
                                 this.state.animal.ConservationStatus
@@ -1724,83 +1725,134 @@
                           )
                         )
                       ),
-                      o.a.createElement(
+                      l.a.createElement(
                         "div",
                         { className: "sponsorship" },
-                        o.a.createElement(
+                        l.a.createElement(
                           "div",
                           { className: "why-sponsor" },
-                          o.a.createElement(
+                          l.a.createElement(
                             "h1",
                             { className: "why" },
                             "Sponsor ",
                             this.state.animal.name,
                             " now !"
                           ),
-                          o.a.createElement(
+                          l.a.createElement(
                             "h2",
                             { className: "why2" },
                             "Why sponsor an animal?"
                           ),
-                          o.a.createElement(
+                          l.a.createElement(
                             "p",
                             { className: "text-sponsor" },
                             "Today, R.O.A.R. needs your support so it can take things even further: now you can sponsor the animal of your choice and help to protect an endangered species! Thanks to your donation, you\u2019ll be contributing to the well-being of the animals at the Sanctuary (veterinary equipment or enclosures, animal food, environmental enrichment programmes, various expenses) or the protection of endangered species in their native habitats (on-site conservation programmes)."
                           )
                         ),
-                        o.a.createElement(
+                        l.a.createElement(
                           "div",
                           { className: "grid" },
-                          o.a.createElement(
+                          l.a.createElement(
                             ye.a,
-                            null,
-                            o.a.createElement(
+                            { stackable: !0, columns: 4 },
+                            l.a.createElement(
                               ye.a.Column,
                               { width: 4 },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "div",
                                 { className: "sponsor" },
-                                o.a.createElement(
+                                this.state.animal.adopted &&
+                                  l.a.createElement(
+                                    "div",
+                                    { class: "overlay" },
+                                    l.a.createElement(
+                                      "div",
+                                      { class: "text-overlay" },
+                                      l.a.createElement(
+                                        r.b,
+                                        { to: "/", className: "meetLink" },
+                                        "Already adopted!"
+                                      )
+                                    )
+                                  ),
+                                l.a.createElement(
                                   r.b,
                                   {
-                                    to: "/ponctualsponsor",
+                                    to: "/punctualsponsor/".concat(
+                                      this.state.animal._id
+                                    ),
                                     style: { color: "white" },
                                   },
                                   "Punctual",
-                                  o.a.createElement("br", null),
+                                  l.a.createElement("br", null),
                                   " Sponsorship"
                                 )
                               )
                             ),
-                            o.a.createElement(
+                            l.a.createElement(
                               ye.a.Column,
                               { width: 4 },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "div",
                                 { className: "sponsor" },
-                                o.a.createElement(
+                                this.state.animal.adopted &&
+                                  l.a.createElement(
+                                    "div",
+                                    { class: "overlay" },
+                                    l.a.createElement(
+                                      "div",
+                                      { class: "text-overlay" },
+                                      l.a.createElement(
+                                        r.b,
+                                        { to: "/", className: "meetLink" },
+                                        "Already adopted!"
+                                      )
+                                    )
+                                  ),
+                                l.a.createElement(
                                   r.b,
                                   {
-                                    to: "/paymentform",
+                                    to: "/monthlysponsor/".concat(
+                                      this.state.animal._id
+                                    ),
                                     style: { color: "white" },
                                   },
                                   "Monthly",
-                                  o.a.createElement("br", null),
+                                  l.a.createElement("br", null),
                                   " Sponsorship"
                                 )
                               )
                             ),
-                            o.a.createElement(
+                            l.a.createElement(
                               ye.a.Column,
                               { width: 4 },
-                              o.a.createElement(
+                              l.a.createElement(
                                 "div",
                                 { className: "sponsor" },
-                                o.a.createElement(
+                                this.state.animal.adopted &&
+                                  l.a.createElement(
+                                    "div",
+                                    { class: "overlay" },
+                                    l.a.createElement(
+                                      "div",
+                                      { class: "text-overlay" },
+                                      l.a.createElement(
+                                        r.b,
+                                        { to: "/", className: "meetLink" },
+                                        "Already adopted!"
+                                      )
+                                    )
+                                  ),
+                                l.a.createElement(
                                   r.b,
-                                  { to: "/#", style: { color: "white" } },
+                                  {
+                                    to: "/adoption/".concat(
+                                      this.state.animal._id
+                                    ),
+                                    style: { color: "white" },
+                                  },
                                   "1 year",
-                                  o.a.createElement("br", null),
+                                  l.a.createElement("br", null),
                                   "Adoption"
                                 )
                               )
@@ -1814,41 +1866,19 @@
               ]),
               n
             );
-          })(o.a.Component));
+          })(l.a.Component));
       fe.contextType = O;
-      var ve = x(fe),
+      var ve = I(fe),
         Ee = function (e) {
-          return o.a.createElement(
+          return l.a.createElement(
             "div",
             { className: "animalTarget" },
-            o.a.createElement(T, null),
-            o.a.createElement(ve, { id: e.match.params.id })
+            l.a.createElement(T, null),
+            l.a.createElement(ve, { id: e.match.params.id })
           );
         },
-        _e = (function (e) {
-          Object(m.a)(n, e);
-          var a = Object(u.a)(n);
-          function n() {
-            return Object(c.a)(this, n), a.apply(this, arguments);
-          }
-          return (
-            Object(s.a)(n, [
-              {
-                key: "render",
-                value: function () {
-                  return o.a.createElement(
-                    "div",
-                    null,
-                    o.a.createElement(T, null)
-                  );
-                },
-              },
-            ]),
-            n
-          );
-        })(t.Component),
-        we = n(224),
-        Ce = {
+        _e = n(225),
+        we = {
           formValues: {
             date: "",
             service: "",
@@ -1866,37 +1896,37 @@
             amount: "",
           },
         },
-        Se = function (e, a) {
+        Ce = function (e, a) {
           switch (a.type) {
             case "editFormValue":
               return (
                 (e.formValues[a.key.toLowerCase()] = a.value),
-                Object(we.a)({}, e)
+                Object(_e.a)({}, e)
               );
             case "emptyFormValue":
-              return Object(we.a)(
-                Object(we.a)({}, e),
+              return Object(_e.a)(
+                Object(_e.a)({}, e),
                 {},
-                { formValues: Ce.formValues }
+                { formValues: we.formValues }
               );
           }
           return e;
         },
-        ke = Object(t.createContext)(),
-        Ne = function (e) {
+        Se = Object(t.createContext)(),
+        ke = function (e) {
           var a = e.children;
-          return o.a.createElement(
-            ke.Provider,
-            { value: Object(t.useReducer)(Se, Ce) },
+          return l.a.createElement(
+            Se.Provider,
+            { value: Object(t.useReducer)(Ce, we) },
             a
           );
         },
-        Ae = function () {
-          return Object(t.useContext)(ke);
+        Ne = function () {
+          return Object(t.useContext)(Se);
         },
-        Oe = n(551),
-        Re = n(310),
-        Ie = n(571),
+        Ae = n(552),
+        Oe = n(311),
+        Re = n(572),
         xe = {
           typography: {
             fontFamily: [
@@ -1941,14 +1971,14 @@
             },
           },
         };
-      xe = Object(Re.a)(xe);
-      var Pe = (xe = Object(Ie.a)(xe)),
-        je = n(528),
-        Te = n(530),
-        De = n(531),
-        Me = n(244),
-        Le = n(526),
-        Fe = Object(Le.a)(function (e) {
+      xe = Object(Oe.a)(xe);
+      var Ie = (xe = Object(Re.a)(xe)),
+        Pe = n(529),
+        je = n(531),
+        Te = n(532),
+        Me = n(245),
+        De = n(527),
+        Le = Object(De.a)(function (e) {
           return {
             topAppBar: { Height: "20vh", minHeight: "200px" },
             toolbar: {
@@ -1965,23 +1995,23 @@
             },
           };
         }),
-        Be = function (e) {
+        Fe = function (e) {
           var a = e.title,
-            n = (e.logoLink, Fe());
-          return o.a.createElement(
-            je.a,
+            n = (e.logoLink, Le());
+          return l.a.createElement(
+            Pe.a,
             {
               position: "static",
               elevation: 0,
               color: "default",
               className: n.topAppBar,
             },
-            o.a.createElement(
-              Te.a,
+            l.a.createElement(
+              je.a,
               { className: n.toolbar },
               void 0 !== a &&
-                o.a.createElement(
-                  De.a,
+                l.a.createElement(
+                  Te.a,
                   {
                     container: !0,
                     item: !0,
@@ -1990,21 +2020,21 @@
                     xs: 12,
                     sm: 6,
                   },
-                  o.a.createElement(
-                    De.a,
+                  l.a.createElement(
+                    Te.a,
                     { item: !0 },
-                    o.a.createElement("img", {
+                    l.a.createElement("img", {
                       src:
                         "https://res.cloudinary.com/dxgllmny2/image/upload/v1603271133/LionIcon_dqetpr.png",
                       alt: "logo",
                       height: "70px",
-                      style: { width: "10vw", marginRight:"5%" }
+                      style: { width: "10vw", paddingRight:"5%" }
                     })
                   ),
-                  o.a.createElement(
-                    De.a,
+                  l.a.createElement(
+                    Te.a,
                     { item: !0 },
-                    o.a.createElement(
+                    l.a.createElement(
                       Me.a,
                       {
                         className: n.title,
@@ -2019,25 +2049,25 @@
             )
           );
         },
-        Ge = n(73),
-        Ke = n.n(Ge),
-        Ue = n(125),
-        He = n(39),
-        Ve = n(556),
-        We = n(542),
-        ze = n(317),
-        Ye = n(536),
-        $e = n(537),
-        Ze = n(565),
-        qe = n(540),
-        Je = n(541),
-        Qe = n(538),
-        Xe = n(539),
-        ea = n(2),
-        aa = n(532),
-        na = n(533),
-        ta = n(534),
-        oa = Object(Le.a)(function (e) {
+        Be = n(73),
+        Ge = n.n(Be),
+        Ke = n(126),
+        Ue = n(39),
+        He = n(557),
+        Ve = n(543),
+        We = n(318),
+        ze = n(537),
+        Ye = n(538),
+        $e = n(566),
+        qe = n(541),
+        Ze = n(542),
+        Je = n(539),
+        Qe = n(540),
+        Xe = n(2),
+        ea = n(533),
+        aa = n(534),
+        na = n(535),
+        ta = Object(De.a)(function (e) {
           return {
             root: {
               backgroundColor: "#ccc",
@@ -2057,50 +2087,50 @@
             completed: { background: e.palette.primary.main },
           };
         }),
-        ia = function (e) {
+        la = function (e) {
           var a,
-            n = oa(),
+            n = ta(),
             t = e.active,
-            i = e.completed,
-            l = {
-              1: o.a.createElement(aa.a, null),
-              2: o.a.createElement(na.a, null),
-              3: o.a.createElement(ta.a, null),
-              4: o.a.createElement(ta.a, null),
+            o = e.completed,
+            i = {
+              1: l.a.createElement(ea.a, null),
+              2: l.a.createElement(aa.a, null),
+              3: l.a.createElement(na.a, null),
+              4: l.a.createElement(na.a, null),
             };
-          return o.a.createElement(
+          return l.a.createElement(
             "div",
             {
-              className: Object(ea.a)(
+              className: Object(Xe.a)(
                 n.root,
                 ((a = {}),
                 Object(K.a)(a, n.active, t),
-                Object(K.a)(a, n.completed, i),
+                Object(K.a)(a, n.completed, o),
                 a)
               ),
             },
-            l[String(e.icon)]
+            i[String(e.icon)]
           );
         },
-        la = n(554),
-        ra = n(557),
-        ca = function () {
-          var e = Ae(),
-            a = Object(He.a)(e, 2),
+        oa = n(555),
+        ia = n(558),
+        ra = function () {
+          var e = Ne(),
+            a = Object(Ue.a)(e, 2),
             n = a[0].formValues,
             t = a[1];
-          return o.a.createElement(
-            o.a.Fragment,
+          return l.a.createElement(
+            l.a.Fragment,
             null,
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12 },
-              o.a.createElement(Me.a, { variant: "h6" }, "Contact information")
+              l.a.createElement(Me.a, { variant: "h6" }, "Contact information")
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 4 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "First Name",
                 name: "firstname",
                 variant: "outlined",
@@ -2116,10 +2146,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 4 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Last Name",
                 name: "lastname",
                 variant: "outlined",
@@ -2135,10 +2165,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 4 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Email Address",
                 name: "email",
                 variant: "outlined",
@@ -2154,10 +2184,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Street Address 1",
                 name: "address1",
                 variant: "outlined",
@@ -2173,10 +2203,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Street Address 2 (optional)",
                 name: "line2",
                 variant: "outlined",
@@ -2191,10 +2221,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 4 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Postal Code",
                 name: "postal_code",
                 variant: "outlined",
@@ -2210,10 +2240,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 4 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "City",
                 name: "city",
                 variant: "outlined",
@@ -2229,17 +2259,17 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 4 },
-              o.a.createElement(ra.a, {
-                options: sa,
+              l.a.createElement(ia.a, {
+                options: ca,
                 getOptionLabel: function (e) {
                   return e.name;
                 },
                 renderInput: function (e) {
-                  return o.a.createElement(
-                    la.a,
+                  return l.a.createElement(
+                    oa.a,
                     Object.assign(
                       {
                         label: "Country",
@@ -2260,7 +2290,7 @@
             )
           );
         },
-        sa = [
+        ca = [
           { name: "Afghanistan", code: "AF" },
           { name: "\xc5land Islands", code: "AX" },
           { name: "Albania", code: "AL" },
@@ -2505,51 +2535,51 @@
           { name: "Zambia", code: "ZM" },
           { name: "Zimbabwe", code: "ZW" },
         ],
-        ma = n(87),
-        ua = function (e) {
+        sa = n(87),
+        ma = function (e) {
           var a = e.component,
             n = e.inputRef,
-            i = Object(Q.a)(e, ["component", "inputRef"]),
-            l = Object(t.useRef)();
+            o = Object(Q.a)(e, ["component", "inputRef"]),
+            i = Object(t.useRef)();
           return (
             Object(t.useImperativeHandle)(n, function () {
               return {
                 focus: function () {
-                  return l.current.focus;
+                  return i.current.focus;
                 },
               };
             }),
-            o.a.createElement(
+            l.a.createElement(
               a,
               Object.assign(
                 {
                   onReady: function (e) {
-                    return (l.current = e);
+                    return (i.current = e);
                   },
                 },
-                i
+                o
               )
             )
           );
         },
-        da = function () {
-          var e = Ae(),
-            a = Object(He.a)(e, 2),
+        ua = function () {
+          var e = Ne(),
+            a = Object(Ue.a)(e, 2),
             n = a[0].formValues,
             t = a[1];
-          return o.a.createElement(
-            o.a.Fragment,
+          return l.a.createElement(
+            l.a.Fragment,
             null,
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { container: !0, item: !0, xs: 12 },
-              o.a.createElement(
-                De.a,
+              l.a.createElement(
+                Te.a,
                 { item: !0, xs: 12, sm: 3 },
-                o.a.createElement(Me.a, { variant: "h6" }, "Payment Data")
+                l.a.createElement(Me.a, { variant: "h6" }, "Payment Data")
               ),
-              o.a.createElement(
-                De.a,
+              l.a.createElement(
+                Te.a,
                 {
                   container: !0,
                   item: !0,
@@ -2569,7 +2599,7 @@
                   "visa",
                   "visaelectron",
                 ].map(function (e) {
-                  return o.a.createElement("img", {
+                  return l.a.createElement("img", {
                     key: e,
                     src: "./cards/".concat(e, ".png"),
                     alt: e,
@@ -2580,17 +2610,17 @@
                 })
               )
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 6, sm: 3 },
-              o.a.createElement(ra.a, {
-                options: pa,
+              l.a.createElement(ia.a, {
+                options: da,
                 getOptionLabel: function (e) {
                   return e.code;
                 },
                 renderOption: function (e) {
-                  return o.a.createElement(
-                    o.a.Fragment,
+                  return l.a.createElement(
+                    l.a.Fragment,
                     null,
                     e.name,
                     " (",
@@ -2599,8 +2629,8 @@
                   );
                 },
                 renderInput: function (e) {
-                  return o.a.createElement(
-                    la.a,
+                  return l.a.createElement(
+                    oa.a,
                     Object.assign(
                       {
                         label: "Currency",
@@ -2618,10 +2648,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 6, sm: 3 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Amount",
                 name: "amount",
                 variant: "outlined",
@@ -2637,57 +2667,57 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Credit Card Number",
                 name: "ccnumber",
                 variant: "outlined",
                 required: !0,
                 fullWidth: !0,
                 InputProps: {
-                  inputComponent: ua,
-                  inputProps: { component: ma.CardNumberElement },
+                  inputComponent: ma,
+                  inputProps: { component: sa.CardNumberElement },
                 },
                 InputLabelProps: { shrink: !0 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 6, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Expiration Date",
                 name: "ccexp",
                 variant: "outlined",
                 required: !0,
                 fullWidth: !0,
                 InputProps: {
-                  inputProps: { component: ma.CardExpiryElement },
-                  inputComponent: ua,
+                  inputProps: { component: sa.CardExpiryElement },
+                  inputComponent: ma,
                 },
                 InputLabelProps: { shrink: !0 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 6, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "CVC",
                 name: "cvc",
                 variant: "outlined",
                 required: !0,
                 fullWidth: !0,
                 InputProps: {
-                  inputProps: { component: ma.CardCvcElement },
-                  inputComponent: ua,
+                  inputProps: { component: sa.CardCvcElement },
+                  inputComponent: ma,
                 },
                 InputLabelProps: { shrink: !0 },
               })
             )
           );
         },
-        pa = [
+        da = [
           {
             symbol: "AED",
             name: "United Arab Emirates Dirham",
@@ -3751,23 +3781,23 @@
             name_plural: "Zambian kwachas",
           },
         ],
-        ha = function () {
-          var e = Ae(),
-            a = Object(He.a)(e, 2),
+        pa = function () {
+          var e = Ne(),
+            a = Object(Ue.a)(e, 2),
             n = a[0].formValues,
             t = a[1];
-          return o.a.createElement(
-            o.a.Fragment,
+          return l.a.createElement(
+            l.a.Fragment,
             null,
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12 },
-              o.a.createElement(Me.a, { variant: "h6" }, "Additional data")
+              l.a.createElement(Me.a, { variant: "h6" }, "Additional data")
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 type: "date",
                 label: "date",
                 name: "date",
@@ -3784,10 +3814,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "Service",
                 name: "service",
                 variant: "outlined",
@@ -3802,15 +3832,15 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12 },
-              o.a.createElement(Me.a, { variant: "h6" }, "Social Network?")
+              l.a.createElement(Me.a, { variant: "h6" }, "Social Network?")
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "facebook",
                 name: "facebook",
                 variant: "outlined",
@@ -3825,10 +3855,10 @@
                 },
               })
             ),
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               { item: !0, xs: 12, sm: 6 },
-              o.a.createElement(la.a, {
+              l.a.createElement(oa.a, {
                 label: "twitter",
                 name: "twitter",
                 variant: "outlined",
@@ -3845,9 +3875,9 @@
             )
           );
         },
-        ba = n(9),
-        ga = n(483),
-        ya = Object(ba.a)(function (e) {
+        ha = n(9),
+        ba = n(484),
+        ga = Object(ha.a)(function (e) {
           return {
             alternativeLabel: { top: 22 },
             active: { "& $line": { background: e.palette.primary.main } },
@@ -3859,21 +3889,21 @@
               borderRadius: 1,
             },
           };
-        })(ga.a),
-        fa = "localhost" === window.location.hostname,
-        va = fa ? "http://localhost/" : window.location.hostname,
-        Ea = function () {
-          var e = va + "/publishableKeyGet.php";
+        })(ba.a),
+        ya = "localhost" === window.location.hostname,
+        fa = ya ? "http://localhost/" : window.location.hostname,
+        va = function () {
+          var e = fa + "/publishableKeyGet.php";
           return new Promise(
             (function () {
-              var a = Object(Ue.a)(
-                Ke.a.mark(function a(n) {
-                  var t, o;
-                  return Ke.a.wrap(function (a) {
+              var a = Object(Ke.a)(
+                Ge.a.mark(function a(n) {
+                  var t, l;
+                  return Ge.a.wrap(function (a) {
                     for (;;)
                       switch ((a.prev = a.next)) {
                         case 0:
-                          if (!fa) {
+                          if (!ya) {
                             a.next = 6;
                             break;
                           }
@@ -3898,7 +3928,7 @@
                         case 8:
                           a.t0 = a.sent;
                         case 9:
-                          (t = a.t0), (o = t.data.publishableKey), n(o);
+                          (t = a.t0), (l = t.data.publishableKey), n(l);
                         case 12:
                         case "end":
                           return a.stop();
@@ -3912,20 +3942,20 @@
             })()
           );
         },
-        _a = function (e) {
-          var a = va + "capture.php";
+        Ea = function (e) {
+          var a = fa + "capture.php";
           return new Promise(
             (function () {
-              var n = Object(Ue.a)(
-                Ke.a.mark(function n(t) {
-                  var o, i;
-                  return Ke.a.wrap(function (n) {
+              var n = Object(Ke.a)(
+                Ge.a.mark(function n(t) {
+                  var l, o;
+                  return Ge.a.wrap(function (n) {
                     for (;;)
                       switch ((n.prev = n.next)) {
                         case 0:
                           return (n.next = 2), p.a.post(a, e);
                         case 2:
-                          (o = n.sent), (i = o.data.clientSecret), t(i);
+                          (l = n.sent), (o = l.data.clientSecret), t(o);
                         case 5:
                         case "end":
                           return n.stop();
@@ -3939,27 +3969,27 @@
             })()
           );
         },
-        wa = function (e) {
+        _a = function (e) {
           var a = e.staff,
             n = e.arrivaldate,
             t = e.service,
-            o = e.fsm,
-            i = e.email,
-            l = e.currency;
+            l = e.fsm,
+            o = e.email,
+            i = e.currency;
           return {
             amount: 100 * e.amount,
-            currency: l.code,
+            currency: i.code,
             cardType: "card",
-            receipt_email: i,
-            metadata: { staff: a, arrivaldate: n, service: t, fsm: o },
+            receipt_email: o,
+            metadata: { staff: a, arrivaldate: n, service: t, fsm: l },
           };
         },
-        Ca = function (e, a) {
+        wa = function (e, a) {
           var n = e.firstname,
             t = e.lastname,
-            o = e.email,
-            i = e.line1,
-            l = e.line2,
+            l = e.email,
+            o = e.line1,
+            i = e.line2,
             r = e.postal_code;
           return {
             payment_method: {
@@ -3968,19 +3998,19 @@
                 address: {
                   city: e.city,
                   country: e.country.code,
-                  line1: i,
-                  line2: l,
+                  line1: o,
+                  line2: i,
                   postal_code: r,
                   state: null,
                 },
-                email: o,
+                email: l,
                 name: "".concat(n, " ").concat(t),
                 phone: null,
               },
             },
           };
         },
-        Sa = Object(Le.a)(function (e) {
+        Ca = Object(De.a)(function (e) {
           return {
             button: { marginRight: e.spacing(1) },
             mainBox: {
@@ -4000,73 +4030,73 @@
             buttonWrapper: { justifyContent: "flex-end" },
           };
         }),
-        ka = function (e) {
+        Sa = function (e) {
           switch (e.step) {
             case 0:
-              return o.a.createElement(ca, null);
+              return l.a.createElement(ra, null);
             case 1:
-              return o.a.createElement(ha, null);
+              return l.a.createElement(pa, null);
             case 2:
-              return o.a.createElement(da, null);
+              return l.a.createElement(ua, null);
             default:
-              return o.a.createElement(o.a.Fragment, null);
+              return l.a.createElement(l.a.Fragment, null);
           }
         },
-        Na = function () {
-          var e = Sa(),
+        ka = function () {
+          var e = Ca(),
             a = Object(t.useState)(0),
-            n = Object(He.a)(a, 2),
-            i = n[0],
-            l = n[1],
+            n = Object(Ue.a)(a, 2),
+            o = n[0],
+            i = n[1],
             r = Object(t.useState)(!1),
-            c = Object(He.a)(r, 2),
+            c = Object(Ue.a)(r, 2),
             s = c[0],
             m = c[1],
             u = Object(t.useState)(!0),
-            d = Object(He.a)(u, 2),
+            d = Object(Ue.a)(u, 2),
             p = d[0],
             h = d[1],
             b = Object(t.useState)(""),
-            g = Object(He.a)(b, 2),
+            g = Object(Ue.a)(b, 2),
             y = g[0],
             f = g[1],
-            v = Object(ma.useStripe)(),
-            E = Object(ma.useElements)(),
-            _ = Ae(),
-            w = Object(He.a)(_, 2),
+            v = Object(sa.useStripe)(),
+            E = Object(sa.useElements)(),
+            _ = Ne(),
+            w = Object(Ue.a)(_, 2),
             C = w[0].formValues,
             S = w[1],
             k = function () {
-              return l(function (e) {
+              return i(function (e) {
                 return e - 1;
               });
             },
             N = (function () {
-              var e = Object(Ue.a)(
-                Ke.a.mark(function e() {
-                  var a, n, t, o, i, r, c;
-                  return Ke.a.wrap(function (e) {
+              var e = Object(Ke.a)(
+                Ge.a.mark(function e() {
+                  var a, n, t, l, o, r, c;
+                  return Ge.a.wrap(function (e) {
                     for (;;)
                       switch ((e.prev = e.next)) {
                         case 0:
-                          return m(!0), (a = wa(C)), (e.next = 4), _a(a);
+                          return m(!0), (a = _a(C)), (e.next = 4), Ea(a);
                         case 4:
                           return (
                             (n = e.sent),
-                            (t = E.getElement(ma.CardCvcElement)),
-                            (o = Ca(C, t)),
+                            (t = E.getElement(sa.CardCvcElement)),
+                            (l = wa(C, t)),
                             (e.next = 9),
-                            v.confirmCardPayment(n, o)
+                            v.confirmCardPayment(n, l)
                           );
                         case 9:
-                          (i = e.sent),
-                            (r = i.paymentIntent),
-                            (c = i.error)
+                          (o = e.sent),
+                            (r = o.paymentIntent),
+                            (c = o.error)
                               ? (h(!1), f(c.message))
                               : r &&
                                 "succeeded" === r.status &&
                                 (h(!0), f(""), S({ type: "emptyFormValue" })),
-                            l(function (e) {
+                            i(function (e) {
                               return e + 1;
                             }),
                             m(!1);
@@ -4081,31 +4111,31 @@
                 return e.apply(this, arguments);
               };
             })();
-          return o.a.createElement(
-            o.a.Fragment,
+          return l.a.createElement(
+            l.a.Fragment,
             null,
-            o.a.createElement(
-              Ye.a,
+            l.a.createElement(
+              ze.a,
               {
                 alternativeLabel: !0,
                 className: e.stepper,
-                connector: o.a.createElement(ya, null),
-                activeStep: i,
+                connector: l.a.createElement(ga, null),
+                activeStep: o,
               },
               [1, 2, 3].map(function (e) {
-                return o.a.createElement(
-                  $e.a,
+                return l.a.createElement(
+                  Ye.a,
                   { key: e },
-                  o.a.createElement(Ze.a, { StepIconComponent: ia })
+                  l.a.createElement($e.a, { StepIconComponent: la })
                 );
               })
             ),
-            o.a.createElement(
-              Ve.a,
+            l.a.createElement(
+              He.a,
               { className: e.mainBox },
-              3 === i
-                ? o.a.createElement(
-                    De.a,
+              3 === o
+                ? l.a.createElement(
+                    Te.a,
                     {
                       container: !0,
                       spacing: 3,
@@ -4115,21 +4145,21 @@
                       style: { height: "400px" },
                     },
                     p
-                      ? o.a.createElement(Qe.a, {
+                      ? l.a.createElement(Je.a, {
                           fontSize: "large",
                           color: "primary",
                         })
-                      : o.a.createElement(Xe.a, {
+                      : l.a.createElement(Qe.a, {
                           fontSize: "large",
                           color: "error",
                         }),
-                    o.a.createElement(Me.a, { variant: "h4" }, y),
-                    o.a.createElement(
+                    l.a.createElement(Me.a, { variant: "h4" }, y),
+                    l.a.createElement(
                       qe.a,
                       {
                         onClick: p
                           ? function () {
-                              return l(0);
+                              return i(0);
                             }
                           : k,
                         className: e.button,
@@ -4137,37 +4167,37 @@
                       p ? "Reset" : "Back"
                     )
                   )
-                : o.a.createElement(
+                : l.a.createElement(
                     "form",
                     {
                       autoComplete: "off",
                       className: e.form,
                       onSubmit: function (e) {
                         e.preventDefault(),
-                          2 === i
+                          2 === o
                             ? N()
-                            : l(function (e) {
+                            : i(function (e) {
                                 return e + 1;
                               });
                       },
                     },
-                    o.a.createElement(
-                      De.a,
+                    l.a.createElement(
+                      Te.a,
                       { container: !0, spacing: 3 },
-                      o.a.createElement(ka, { step: i }),
-                      o.a.createElement(
-                        De.a,
+                      l.a.createElement(Sa, { step: o }),
+                      l.a.createElement(
+                        Te.a,
                         { container: !0, item: !0, justify: "flex-end" },
-                        o.a.createElement(
+                        l.a.createElement(
                           qe.a,
                           {
-                            disabled: 0 === i,
+                            disabled: 0 === o,
                             className: e.button,
                             onClick: k,
                           },
                           "Back"
                         ),
-                        o.a.createElement(
+                        l.a.createElement(
                           qe.a,
                           {
                             variant: "contained",
@@ -4177,8 +4207,8 @@
                             disabled: s,
                           },
                           s
-                            ? o.a.createElement(Je.a, { size: 24 })
-                            : 2 === i
+                            ? l.a.createElement(Ze.a, { size: 24 })
+                            : 2 === o
                             ? "Pay"
                             : "Next"
                         )
@@ -4188,8 +4218,8 @@
             )
           );
         },
-        Aa = n(309),
-        Oa = Object(Le.a)(function (e) {
+        Na = n(310),
+        Aa = Object(De.a)(function (e) {
           return {
             boxWrapper: {
               marginBottom: "55px",
@@ -4203,25 +4233,25 @@
             },
           };
         }),
-        Ra = function () {
-          var e = Oa(),
+        Oa = function () {
+          var e = Aa(),
             a = Object(t.useState)(null),
-            n = Object(He.a)(a, 2),
-            i = n[0],
-            l = n[1];
+            n = Object(Ue.a)(a, 2),
+            o = n[0],
+            i = n[1];
           return (
             Object(t.useEffect)(function () {
               (function () {
-                var e = Object(Ue.a)(
-                  Ke.a.mark(function e() {
+                var e = Object(Ke.a)(
+                  Ge.a.mark(function e() {
                     var a, n;
-                    return Ke.a.wrap(function (e) {
+                    return Ge.a.wrap(function (e) {
                       for (;;)
                         switch ((e.prev = e.next)) {
                           case 0:
-                            return (e.next = 2), Ea();
+                            return (e.next = 2), va();
                           case 2:
-                            (a = e.sent), (n = Object(Aa.a)(a)), l(n);
+                            (a = e.sent), (n = Object(Na.a)(a)), i(n);
                           case 5:
                           case "end":
                             return e.stop();
@@ -4234,20 +4264,20 @@
                 };
               })()();
             }, []),
-            o.a.createElement(
-              Ve.a,
+            l.a.createElement(
+              He.a,
               { component: "main", className: e.boxWrapper },
-              o.a.createElement(
-                We.a,
+              l.a.createElement(
+                Ve.a,
                 { maxWidth: "md", className: e.container },
-                o.a.createElement(
-                  ze.a,
+                l.a.createElement(
+                  We.a,
                   { elevation: 5 },
-                  i
-                    ? o.a.createElement(
-                        ma.Elements,
-                        { stripe: i },
-                        o.a.createElement(Na, null)
+                  o
+                    ? l.a.createElement(
+                        sa.Elements,
+                        { stripe: o },
+                        l.a.createElement(ka, null)
                       )
                     : null
                 )
@@ -4255,21 +4285,21 @@
             )
           );
         },
-        Ia = n(543),
-        xa = n(548),
-        Pa = n(569),
-        ja = n(544),
-        Ta = n(545),
-        Da = n(546),
-        Ma = n(547),
-        La = function (e) {
+        Ra = n(544),
+        xa = n(549),
+        Ia = n(570),
+        Pa = n(545),
+        ja = n(546),
+        Ta = n(547),
+        Ma = n(548),
+        Da = function (e) {
           var a = e.separator,
             n = Object(t.useState)(!1),
-            i = Object(He.a)(n, 2),
-            l = i[0],
-            r = i[1],
+            o = Object(Ue.a)(n, 2),
+            i = o[0],
+            r = o[1],
             c = Object(t.useState)("legal"),
-            s = Object(He.a)(c, 2),
+            s = Object(Ue.a)(c, 2),
             m = s[0],
             u = s[1],
             d = function (e) {
@@ -4280,23 +4310,23 @@
                 name: "legal",
                 title: "Legal Notice",
                 description: function () {
-                  return o.a.createElement(
-                    o.a.Fragment,
+                  return l.a.createElement(
+                    l.a.Fragment,
                     null,
                     "This website is owned and operated by _________.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "To contact us:",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Name",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Address line",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "postcode city",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "country",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Phone: ___________"
                   );
                 },
@@ -4305,92 +4335,92 @@
                 name: "privacy",
                 title: "Privacy Notice",
                 description: function () {
-                  return o.a.createElement(
-                    o.a.Fragment,
+                  return l.a.createElement(
+                    l.a.Fragment,
                     null,
                     "The present website, including all information and materials contained on it, are managed and controlled by _________, ADDRESS.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Our contact details are provided on our Legal Notice.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "The terms and conditions set out in this Privacy Notice apply in conjunction with the more detailed Privacy Policies.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "Our Commitment"
                     ),
                     "We are committed to respecting and ensuring the privacy of all the users of this website.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We will be transparent about the purposes for which we collect data, including personal data, and about the kinds of data we collect and how we use them.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(Me.a, { variant: "h6" }, "Your Consent"),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(Me.a, { variant: "h6" }, "Your Consent"),
                     "By using this website, you consent to the terms of this Privacy Notice.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We may change the terms of this Notice and these Policies from time to time.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "If such changes are made, we will promptly place notices on all the websites so that you can be aware of those changes.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Your continued use of this websites subsequent to such notified changes will mean that you accept those changes, and will be on the terms of this Privacy Notice and those Privacy Policies, as amended from time to time.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "What types of information do we collect and store?",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "Personal Information"
                     ),
                     "You can access most of the pages on the website without telling us who you are and without revealing any personal information.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We do not collect personal information (such as your name, address, phone number or e-mail address, or other personal details) on the website unless you choose to provide them.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "For example, where you express an interest in joining or donating to one of our organizations, subscribe to our email updates, or buy a book or CD or DVD, we will often provide you with an online form that you can fill in and submit online.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     'In all these cases, we will inform you of the purpose of the form (unless that is obvious) and provide you with options as concerns the uses of the data (see below: "Your Rights: Right to object").',
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We only collect personal information that is relevant and adequate and not excessive for the purposes in question.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     'Non-personal, aggregate data; the use of "cookies" and of Google Analytics',
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(Me.a, { variant: "h6" }, "General"),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(Me.a, { variant: "h6" }, "General"),
                     "Our web servers create anonymous logs during user visits to the website, which are used by us to create aggregate statistics, for example about when the website is accessed, the pages which refer visitors to the website, the type of web browsers visitors use and which pages are viewed.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "These statistics help us understand how the website is used and provide us with valuable information for improving it in the future.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     'In this, we use both our own "cookies" and a special tool, Google Analytics, as described below.',
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "Use of Cookies"
                     ),
                     "A cookie is a text-only piece of information that a website transfers to your computer's hard disk so that the website can remember who you are.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     'A cookie will normally contain the name of the Internet domain from which the cookie has come, the "lifetime" of the cookie, and a value, usually a randomly generated unique number.',
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We use cookies and collect IP addresses (an IP address is a number that can uniquely identify a specific computer or other network device on the internet).",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We use our own analysis software to look at IP addresses and cookies for the purpose of enhancing your user experience.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "This information is not used to develop a personal profile of you.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Users have the opportunity to set their devices to accept all cookies, to notify them when a cookie is issued, or not to receive cookies at any time.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "To prevent the download of cookies, or otherwise control how cookies are used on your computer, please read the help information supplied with your Internet browser software or go to: ",
-                    o.a.createElement(
-                      Ia.a,
+                    l.a.createElement(
+                      Ra.a,
                       {
                         href: "http://www.allaboutcookies.org",
                         target: "_blank",
@@ -4398,96 +4428,96 @@
                       "http://www.allaboutcookies.org"
                     ),
                     ".",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "However please note that if you do this you may not be able to use the full functionality of this website.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "Google Analytics"
                     ),
                     "Our website also uses Google Analytics, a web analytics service provided by Google, Inc. (\u201cGoogle\u201d).",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Google Analytics uses \u201ccookies\u201d to help the website analyze how users use the site (as described above).",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "The information generated by the Google Analytics cookie about your use of the website (including a truncated IP address: see below) will be transmitted to and stored by Google on their servers.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Google will use this information for the purpose of evaluating your use of the website, compiling reports on website activity for website operators such as us, and providing other services relating to website activity and internet usage. Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google's behalf.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "As explained above, you may refuse the use of cookies\u2014and thus also the use of the Google Analytics cookie\u2014by selecting the appropriate settings on your browser, but this too may affect the extent to which you can fully use the website.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "Your Agreement"
                     ),
                     "In accordance to what we already said at the beginning of this Notice, by using this website, you consent to the processing of data about you, and of aggregate data, by us and by Google in the manner and for the purposes set out above.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "How do we use information collected?"
                     ),
                     "Your personal information will be retained by us and its service providers in a secure environment, will be kept confidential, and will only be used in connection with the purposes for which it is submitted, or as necessary for us to comply with our legal obligations.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "Sharing of your personal information?"
                     ),
                     "Other than as described below, the information you provide will not be sold or rented nor will it be shared with any person or entity unrelated to our company, unless we are required to disclose the information by law.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We may share relevant personal data, obtained through this website for hosting and processing:",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Our website may be hosted by a third party service provider and therefore any personal details you submit through this website may be processed by such a third party service provider.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     'We may also use other third parties to process some of your personal details, for example to send you books or other goods you have ordered (so-called "fulfillment").',
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "All of these third party services providers will process your personal information only on our behalf and will be bound by strict confidentiality conditions.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "Payment processing and fraud"
                     ),
                     "Your card or other details may be disclosed to banks or relevant financial institutions to arrange payments.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "In the case of a suspected fraudulent transaction, your details may be further disclosed for the sole purpose of performing further checks (for example, disclosure to a credit checking agency).",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Trans-border data flows",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "If you have accessed this webpage from within the European Union or the European Economic Area, you should be aware that the disclosure of your personal information discussed above will involve transfer of that information to us.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(Me.a, { variant: "h6" }, "Your Rights"),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(Me.a, { variant: "h6" }, "Your Rights"),
                     "Right of access to your personal information:",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "You have a right of access to any personal information that we collect about you on this website and that is retrievable from this website by reference to you personally.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Right of correction:",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "You have a right to correct the information we hold on you, or to have it deleted, if it is incorrect, irrelevant or out of date.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Right to object:",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "When we ask for your contact information in various forms, we will explain to you what we want to use those details for, and we will offer you options in regard of their use.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Specifically, we will explain if we want to use certain information, such as your phone number or mobile phone number or email address, to contact you.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "You can also, at any time, let us know by simple email if you do not want to be contacted any more, either in general or by certain special means (e.g., by text or phone call).",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We will then, within a short period, ensure that such follow-up contacts are stopped.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "subtitle2" },
                       "IF YOU HAVE ANY QUESTIONS ABOUT THIS PRIVACY NOTICE OR OUR PRIVACY POLICES; OR IF YOU WANT TO EXERCISE ANY OF THE ABOVE-MENTIONED RIGHTS."
@@ -4499,63 +4529,63 @@
                 name: "tou",
                 title: "Terms of Use",
                 description: function () {
-                  return o.a.createElement(
-                    o.a.Fragment,
+                  return l.a.createElement(
+                    l.a.Fragment,
                     null,
                     "This website featured to you is subject to the following Terms and our Privacy Notice. If you visit our websites you accept these conditions.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "Please read them carefully.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "1. Scope and Addressees"
                     ),
                     'This website is operated and administered by _______ (see "Legal Notice"), and therefore complies with the applicable laws.',
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "2. Data Privacy Protection"
                     ),
                     'Personally identifiable data of the user of this website will be collected, used and processed in compliance with applicable laws on data privacy protection and our "Privacy Notice".',
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "3. Intellectual Property Rights"
                     ),
                     "All materials available on this site are protected by copyright laws and international copyright treaty provisions.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(Me.a, { variant: "h6" }, "4. Hyperlinks"),
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(Me.a, { variant: "h6" }, "4. Hyperlinks"),
                     "The Site may contain hyperlinks to the web pages of third parties.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We shall have no liability for the contents of such web pages and does not make representations about or endorse such web pages or their contents as its own, as we do not control the information on such web pages and is not responsible for the contents and information given thereon. The use of such web pages shall be at the sole risk of the user.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "5. Applicable Law, Place of Jurisdiction"
                     ),
                     "These Terms of Use including its disclaimers, terms and conditions shall be governed by\u2014and all disputes relating to or in connection with these Terms of Use or their subject matter shall be resolved in accordance with\u2014the European laws, without giving effect to any principles of conflicts of laws.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "We reserve the right to make changes to this site and these disclaimers, terms and conditions at any time.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "User hereby irrevocably and unconditionally consents to submit to the exclusive jurisdiction of the European court for any litigation arising out of or relating to use of this site (and agrees not to commence any litigation relating thereto except in such courts) waives any objection to the laying of venue of any such litigation.",
-                    o.a.createElement("br", null),
-                    o.a.createElement("br", null),
-                    o.a.createElement(
+                    l.a.createElement("br", null),
+                    l.a.createElement("br", null),
+                    l.a.createElement(
                       Me.a,
                       { variant: "h6" },
                       "6. Severability"
                     ),
                     "The provisions of these Terms of Use are intended to be severable. If for any reason any provision of these Terms of Use shall be held invalid or unenforceable in whole or in part in any jurisdiction, such provision shall, as to such jurisdiction, be ineffective to the extent of such invalidity or unenforceability without in any manner affecting the validity or enforceability thereof in any other jurisdiction or the remaining provisions hereof in any jurisdiction.",
-                    o.a.createElement("br", null)
+                    l.a.createElement("br", null)
                   );
                 },
               },
@@ -4563,61 +4593,61 @@
                 name: "trademarks",
                 title: "Trademarks",
                 description: function () {
-                  return o.a.createElement(
-                    o.a.Fragment,
+                  return l.a.createElement(
+                    l.a.Fragment,
                     null,
                     "All materials available on this site are protected by copyright laws and international copyright treaty provisions.",
-                    o.a.createElement("br", null),
+                    l.a.createElement("br", null),
                     "This material has been placed on this Internet site under the authority of the copyright owner for the sole purpose of viewing of the materials by users of this site.",
-                    o.a.createElement("br", null)
+                    l.a.createElement("br", null)
                   );
                 },
               },
             };
-          return o.a.createElement(
+          return l.a.createElement(
             Me.a,
             { variant: "caption" },
             Object.keys(p).map(function (e, n) {
-              return o.a.createElement(
+              return l.a.createElement(
                 "span",
                 { key: n },
                 n > 0 && a,
                 "\xa0",
-                o.a.createElement(
-                  Ia.a,
+                l.a.createElement(
+                  Ra.a,
                   { href: "#", name: p[e].name, onClick: d },
                   p[e].title
                 )
               );
             }),
-            o.a.createElement(
-              Pa.a,
+            l.a.createElement(
+              Ia.a,
               {
-                open: l,
+                open: i,
                 onClose: function () {
                   return r(!1);
                 },
                 "aria-labelledby": "dialog-title",
                 "aria-describedby": "dialog-description",
               },
-              o.a.createElement(
-                ja.a,
+              l.a.createElement(
+                Pa.a,
                 { id: "dialog-title", color: "primary" },
                 p[m].title
               ),
-              o.a.createElement(
-                Ta.a,
+              l.a.createElement(
+                ja.a,
                 null,
-                o.a.createElement(
-                  Da.a,
+                l.a.createElement(
+                  Ta.a,
                   { id: "dialog-description" },
                   p[m].description()
                 )
               ),
-              o.a.createElement(
+              l.a.createElement(
                 Ma.a,
                 null,
-                o.a.createElement(
+                l.a.createElement(
                   qe.a,
                   {
                     onClick: function () {
@@ -4632,19 +4662,19 @@
             )
           );
         },
-        Fa = function () {
-          return o.a.createElement(
-            o.a.Fragment,
+        La = function () {
+          return l.a.createElement(
+            l.a.Fragment,
             null,
-            o.a.createElement(
-              De.a,
+            l.a.createElement(
+              Te.a,
               {
                 container: !0,
                 justify: "center",
                 style: { minHeight: "212px" },
               },
-              o.a.createElement(
-                De.a,
+              l.a.createElement(
+                Te.a,
                 {
                   container: !0,
                   item: !0,
@@ -4652,16 +4682,16 @@
                   xs: 11,
                   justify: "space-between",
                 },
-                o.a.createElement(
-                  De.a,
+                l.a.createElement(
+                  Te.a,
                   { item: !0, sm: 5, xs: 12 },
-                  o.a.createElement(xa.a, { color: "action" }),
-                  o.a.createElement(
+                  l.a.createElement(xa.a, { color: "action" }),
+                  l.a.createElement(
                     Me.a,
                     { paragraph: !0 },
                     "The donations made on this site are sent through a secured connection and processed by Stripe. This site is compliant with the Payment Card Industry and Data Security Standard. Read more about Stripe security ",
-                    o.a.createElement(
-                      Ia.a,
+                    l.a.createElement(
+                      Ra.a,
                       {
                         href: "https://stripe.com/docs/security/stripe",
                         target: "_blank",
@@ -4672,28 +4702,28 @@
                     "."
                   )
                 ),
-                o.a.createElement(
-                  De.a,
+                l.a.createElement(
+                  Te.a,
                   { item: !0, sm: 5, xs: 11 },
-                  o.a.createElement(na.a, { color: "action" }),
-                  o.a.createElement(
+                  l.a.createElement(aa.a, { color: "action" }),
+                  l.a.createElement(
                     Me.a,
                     { paragraph: !0 },
                     "This Web App is fully responsive. Made in ",
-                    o.a.createElement(
-                      Ia.a,
+                    l.a.createElement(
+                      Ra.a,
                       { href: "https://reactjs.org/", target: "_blank" },
                       "ReactJS"
                     ),
                     ", using ",
-                    o.a.createElement(
-                      Ia.a,
+                    l.a.createElement(
+                      Ra.a,
                       { href: "https://material-ui.com", target: "_blank" },
                       "Material-UI"
                     ),
                     " and ",
-                    o.a.createElement(
-                      Ia.a,
+                    l.a.createElement(
+                      Ra.a,
                       {
                         href: "https://stripe.com/docs/stripe-js/react",
                         target: "_blank",
@@ -4701,14 +4731,14 @@
                       "React Stripe"
                     ),
                     ". It's given free of use by ",
-                    o.a.createElement(
-                      Ia.a,
+                    l.a.createElement(
+                      Ra.a,
                       { href: "https://angeloron.com", target: "_blank" },
                       "Ange loron"
                     ),
                     ". react-material-ui-stripe-payment is under the MIT license and can be dowloaded ",
-                    o.a.createElement(
-                      Ia.a,
+                    l.a.createElement(
+                      Ra.a,
                       {
                         href:
                           "https://gitlab.com/angeloron/react-material-ui-stripe-payment",
@@ -4721,31 +4751,31 @@
                 )
               )
             ),
-            o.a.createElement(
-              je.a,
+            l.a.createElement(
+              Pe.a,
               {
                 position: "static",
                 elevation: 0,
                 component: "footer",
                 color: "default",
               },
-              o.a.createElement(
-                Te.a,
+              l.a.createElement(
+                je.a,
                 { style: { justifyContent: "center" } },
-                o.a.createElement(Me.a, { variant: "caption" }, "\xa92020"),
+                l.a.createElement(Me.a, { variant: "caption" }, "\xa92020"),
                 " ",
-                o.a.createElement(La, { separator: "\xa0\u16eb" })
+                l.a.createElement(Da, { separator: "\xa0\u16eb" })
               )
             )
           );
         },
-        Ba = n(549),
-        Ga = n(550),
-        Ka = function () {
+        Fa = n(550),
+        Ba = n(551),
+        Ga = function () {
           var e = Object(t.useState)(!1),
-            a = Object(He.a)(e, 2),
+            a = Object(Ue.a)(e, 2),
             n = a[0],
-            i = a[1];
+            o = a[1];
           return (
             Object(t.useEffect)(function () {
               null ===
@@ -4755,26 +4785,26 @@
                     t < n.length;
                     t++
                   ) {
-                    for (var o = n[t]; " " === o.charAt(0); )
-                      o = o.substring(1, o.length);
-                    if (0 === o.indexOf(a))
-                      return o.substring(a.length, o.length);
+                    for (var l = n[t]; " " === l.charAt(0); )
+                      l = l.substring(1, l.length);
+                    if (0 === l.indexOf(a))
+                      return l.substring(a.length, l.length);
                   }
                   return null;
-                })("CookieAuth") && i(!0),
+                })("CookieAuth") && o(!0),
                 (function (e, a, n) {
                   var t = "";
                   if (n) {
-                    var o = new Date();
-                    o.setTime(o.getTime() + 24 * n * 60 * 60 * 1e3),
-                      (t = "; expires=" + o.toUTCString());
+                    var l = new Date();
+                    l.setTime(l.getTime() + 24 * n * 60 * 60 * 1e3),
+                      (t = "; expires=" + l.toUTCString());
                   }
                   document.cookie = e + "=" + (a || "") + t + "; path=/";
                 })("CookieAuth", 1, 7);
             }, []),
             n
-              ? o.a.createElement(
-                  je.a,
+              ? l.a.createElement(
+                  Pe.a,
                   {
                     position: "fixed",
                     elevation: 0,
@@ -4782,54 +4812,533 @@
                     color: "default",
                     style: { top: "auto", bottom: 0 },
                   },
-                  o.a.createElement(
-                    Te.a,
+                  l.a.createElement(
+                    je.a,
                     { style: { justifyContent: "center" } },
-                    o.a.createElement(
+                    l.a.createElement(
                       "div",
                       null,
-                      o.a.createElement(
+                      l.a.createElement(
                         Me.a,
                         { variant: "caption" },
                         "By using our site, you acknowledge that you have read and understand our"
                       ),
-                      o.a.createElement(La, { separator: "," })
+                      l.a.createElement(Da, { separator: "," })
                     ),
-                    o.a.createElement(
-                      Ba.a,
+                    l.a.createElement(
+                      Fa.a,
                       {
                         onClick: function () {
-                          return i(!1);
+                          return o(!1);
                         },
                         size: "small",
                         style: { marginLeft: "10px", minWidth: "40px" },
                       },
-                      o.a.createElement(Ga.a, null)
+                      l.a.createElement(Ba.a, null)
                     )
                   )
                 )
               : null
           );
         },
-        Ua = function () {
-          return o.a.createElement(
-            Oe.a,
-            { theme: Pe },
-            o.a.createElement(
-              Ne,
-              null,
-              o.a.createElement(
-                "div",
-                { style: { flexGrow: 1 } },
-                o.a.createElement(Be, { title: "PAYMENT FORM" }),
-                o.a.createElement(Ra, null),
-                o.a.createElement(Fa, null)
-              ),
-              o.a.createElement(Ka, null)
-            )
+        Ka = (function (e) {
+          Object(m.a)(n, e);
+          var a = Object(u.a)(n);
+          function n() {
+            var e;
+            Object(c.a)(this, n);
+            for (var t = arguments.length, l = new Array(t), o = 0; o < t; o++)
+              l[o] = arguments[o];
+            return (
+              ((e = a.call.apply(
+                a,
+                [this].concat(l)
+              )).componentDidMount = function () {
+                var a = e.props.match.params.id.split("&"),
+                  n = a[0],
+                  t = a[1],
+                  l = {},
+                  o = {};
+                if ("sponsoring" === t) {
+                  var i = Object(L.a)(e.context.user.sponsoring);
+                  i.push(n), (l = { sponsoring: i });
+                } else if ("adopted" === t) {
+                  var r = Object(L.a)(e.context.user.adoption);
+                  r.push(n),
+                    (l = { adoption: r }),
+                    (o = { adopted: !0 }),
+                    console.log(o);
+                }
+                w(n, o)
+                  .then(function () {
+                    C(e.context.user._id, l).catch(function (e) {
+                      console.log(e);
+                    });
+                  })
+                  .catch(function (e) {
+                    console.log(e);
+                  });
+              }),
+              e
+            );
+          }
+          return (
+            Object(s.a)(n, [
+              {
+                key: "render",
+                value: function () {
+                  return l.a.createElement(
+                    Ae.a,
+                    { theme: Ie },
+                    l.a.createElement(
+                      ke,
+                      null,
+                      l.a.createElement(
+                        "div",
+                        { style: { flexGrow: 1 } },
+                        l.a.createElement(Fe, { title: "PAYMENT FORM" }),
+                        l.a.createElement(Oa, null),
+                        l.a.createElement(La, null)
+                      ),
+                      l.a.createElement(Ga, null)
+                    )
+                  );
+                },
+              },
+            ]),
+            n
           );
-        },
-        Ha = (function (e) {
+        })(t.Component);
+      Ka.contextType = O;
+      var Ua = I(Ka),
+        Ha =
+          (n(179),
+          (function (e) {
+            Object(m.a)(n, e);
+            var a = Object(u.a)(n);
+            function n() {
+              var e;
+              Object(c.a)(this, n);
+              for (
+                var t = arguments.length, l = new Array(t), o = 0;
+                o < t;
+                o++
+              )
+                l[o] = arguments[o];
+              return (
+                ((e = a.call.apply(a, [this].concat(l))).state = {
+                  typeoffunding: "sponsoring",
+                }),
+                e
+              );
+            }
+            return (
+              Object(s.a)(n, [
+                {
+                  key: "render",
+                  value: function () {
+                    return l.a.createElement(
+                      "div",
+                      { className: "puncSponsor" },
+                      l.a.createElement(T, null),
+                      l.a.createElement(
+                        "div",
+                        { className: "quote" },
+                        '"It seems to me that the natural world is the greatest source of excitement; the greatest source of visual beauty, the greatest source of intellectual interest. It is the greatest source of so much in life that makes life worth living."',
+                        l.a.createElement("br", null),
+                        l.a.createElement(
+                          "span",
+                          null,
+                          "- Sir David Attenborough"
+                        )
+                      ),
+                      l.a.createElement(
+                        "div",
+                        { className: "PS" },
+                        l.a.createElement("h1", null, "Punctual Sponsorship"),
+                        l.a.createElement(
+                          "p",
+                          null,
+                          "If you\u2019d prefer not to set up a direct debit you can make a one-off payment of the amount of your choice! Not only will you be providing invaluable care, you will also receive a great gift pack."
+                        ),
+                        l.a.createElement(
+                          "h3",
+                          null,
+                          "How your money will help :"
+                        ),
+                        l.a.createElement(
+                          "ul",
+                          { className: "list" },
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "Rescue, care and support the animal of your choice saved from exploitation and captivity"
+                          ),
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "Provide care for the animal at our sanctuaries (meals, veterinary care, GPS tracking collar...)"
+                          ),
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "Monitor wild populations to inform conservation efforts"
+                          ),
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "Run environmental education programmes for local communities and others"
+                          ),
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "Campaign against exploitation of wildlife and end trophy and canned hunting practices"
+                          )
+                        ),
+                        l.a.createElement("p", null, "and morel..."),
+                        l.a.createElement(
+                          "h3",
+                          null,
+                          "Punctual Sponsorship Pack :"
+                        ),
+                        l.a.createElement(
+                          "p",
+                          { className: "line" },
+                          "To thank you for your sponsorship you will receive :"
+                        ),
+                        l.a.createElement(
+                          "ul",
+                          { className: "list" },
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "A personalized sponsorship certificate"
+                          ),
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "A photo of your sponsored animal to print and keep"
+                          ),
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "A fact sheet about your animal"
+                          ),
+                          l.a.createElement(
+                            "li",
+                            null,
+                            "A quarterly email including photos and an update on your animal"
+                          )
+                        ),
+                        l.a.createElement(
+                          "div",
+                          { className: "link-payment" },
+                          l.a.createElement(
+                            r.b,
+                            {
+                              to: "/paymentform/"
+                                .concat(this.props.match.params.id, "&")
+                                .concat(this.state.typeoffunding),
+                              style: { color: "#455" },
+                            },
+                            "Sponsor now !"
+                          )
+                        )
+                      )
+                    );
+                  },
+                },
+              ]),
+              n
+            );
+          })(t.Component)),
+        Va = (function (e) {
+          Object(m.a)(n, e);
+          var a = Object(u.a)(n);
+          function n() {
+            var e;
+            Object(c.a)(this, n);
+            for (var t = arguments.length, l = new Array(t), o = 0; o < t; o++)
+              l[o] = arguments[o];
+            return (
+              ((e = a.call.apply(a, [this].concat(l))).state = {
+                typeoffunding: "sponsoring",
+              }),
+              e
+            );
+          }
+          return (
+            Object(s.a)(n, [
+              {
+                key: "render",
+                value: function () {
+                  return l.a.createElement(
+                    "div",
+                    { className: "puncSponsor" },
+                    l.a.createElement(T, null),
+                    l.a.createElement(
+                      "div",
+                      { className: "quote" },
+                      '"It seems to me that the natural world is the greatest source of excitement; the greatest source of visual beauty, the greatest source of intellectual interest. It is the greatest source of so much in life that makes life worth living."',
+                      l.a.createElement("br", null),
+                      l.a.createElement(
+                        "span",
+                        null,
+                        "- Sir David Attenborough"
+                      )
+                    ),
+                    l.a.createElement(
+                      "div",
+                      { className: "PS" },
+                      l.a.createElement("h1", null, "Monthly Sponsorship"),
+                      l.a.createElement(
+                        "p",
+                        null,
+                        "With the monthly sponsorship you can set up a direct debit of the amount of your choice, every month (you can stop direct debit at any time)! Not only will you be providing invaluable care, you will also receive a great gift pack."
+                      ),
+                      l.a.createElement(
+                        "h3",
+                        null,
+                        "How your money will help :"
+                      ),
+                      l.a.createElement(
+                        "ul",
+                        { className: "list" },
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Rescue, care and support the animal of your choice saved from exploitation and captivity"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Provide care for the animal at our sanctuaries (meals, veterinary care, GPS tracking collar...)"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Monitor wild populations to inform conservation efforts"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Run environmental education programmes for local communities and others"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Campaign against exploitation of wildlife and end trophy and canned hunting practices"
+                        )
+                      ),
+                      l.a.createElement("p", null, "and morel..."),
+                      l.a.createElement(
+                        "h3",
+                        null,
+                        "Monthly Sponsorship Pack :"
+                      ),
+                      l.a.createElement(
+                        "p",
+                        { className: "line" },
+                        "To thank you for your sponsorship you will receive :"
+                      ),
+                      l.a.createElement(
+                        "ul",
+                        { className: "list" },
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A personalized sponsorship certificate"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A photo of your sponsored animal to print and keep"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A fact sheet about your animal"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A quarterly email including photos and an update on your animal"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "An insider report of all our rescue operations and updates on all the animals at our rescue center"
+                        )
+                      ),
+                      l.a.createElement(
+                        "div",
+                        { className: "link-payment" },
+                        l.a.createElement(
+                          r.b,
+                          {
+                            to: "/paymentform/"
+                              .concat(this.props.match.params.id, "&")
+                              .concat(this.state.typeoffunding),
+                            style: { color: "#455" },
+                          },
+                          "Sponsor now !"
+                        )
+                      )
+                    )
+                  );
+                },
+              },
+            ]),
+            n
+          );
+        })(t.Component),
+        Wa = (function (e) {
+          Object(m.a)(n, e);
+          var a = Object(u.a)(n);
+          function n() {
+            var e;
+            Object(c.a)(this, n);
+            for (var t = arguments.length, l = new Array(t), o = 0; o < t; o++)
+              l[o] = arguments[o];
+            return (
+              ((e = a.call.apply(a, [this].concat(l))).state = {
+                typeoffunding: "adopted",
+              }),
+              e
+            );
+          }
+          return (
+            Object(s.a)(n, [
+              {
+                key: "render",
+                value: function () {
+                  return l.a.createElement(
+                    "div",
+                    { className: "puncSponsor" },
+                    l.a.createElement(T, null),
+                    l.a.createElement(
+                      "div",
+                      { className: "quote" },
+                      '"It seems to me that the natural world is the greatest source of excitement; the greatest source of visual beauty, the greatest source of intellectual interest. It is the greatest source of so much in life that makes life worth living."',
+                      l.a.createElement("br", null),
+                      l.a.createElement(
+                        "span",
+                        null,
+                        "- Sir David Attenborough"
+                      )
+                    ),
+                    l.a.createElement(
+                      "div",
+                      { className: "PS" },
+                      l.a.createElement("h1", null, "1 year adoption"),
+                      l.a.createElement(
+                        "p",
+                        null,
+                        "For 900$ adopt an animal for 1 whole year!  Not only will you be providing invaluable care, you will also receive a great gift pack."
+                      ),
+                      l.a.createElement(
+                        "h3",
+                        null,
+                        "How your money will help :"
+                      ),
+                      l.a.createElement(
+                        "ul",
+                        { className: "list" },
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Rescue, care and support the animal of your choice saved from exploitation and captivity"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Provide care for the animal at our sanctuaries (meals, veterinary care, GPS tracking collar...)"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Monitor wild populations to inform conservation efforts"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Run environmental education programmes for local communities and others"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Campaign against exploitation of wildlife and end trophy and canned hunting practices"
+                        )
+                      ),
+                      l.a.createElement("p", null, "and morel..."),
+                      l.a.createElement(
+                        "h3",
+                        null,
+                        "Punctual Sponsorship Pack :"
+                      ),
+                      l.a.createElement(
+                        "p",
+                        { className: "line" },
+                        "To thank you for your sponsorship you will receive :"
+                      ),
+                      l.a.createElement(
+                        "ul",
+                        { className: "list" },
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A personalized sponsorship certificate"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A photo of your sponsored animal to print and keep"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A fact sheet about your animal"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "A quarterly email including photos and an update on your animal"
+                        ),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "An insider report of all our rescue operations and updates on all the animals at our rescue center"
+                        ),
+                        l.a.createElement("li", null, "A R.O.A.R. tote bag"),
+                        l.a.createElement(
+                          "li",
+                          null,
+                          "Your name for life on our adoption board at the sanctuary"
+                        )
+                      ),
+                      l.a.createElement(
+                        "div",
+                        { className: "link-payment" },
+                        l.a.createElement(
+                          r.b,
+                          {
+                            to: "/paymentform/"
+                              .concat(this.props.match.params.id, "&")
+                              .concat(this.state.typeoffunding),
+                            style: { color: "#455" },
+                          },
+                          "Adopt now !"
+                        )
+                      )
+                    )
+                  );
+                },
+              },
+            ]),
+            n
+          );
+        })(t.Component),
+        za = (function (e) {
           Object(m.a)(n, e);
           var a = Object(u.a)(n);
           function n(e) {
@@ -4840,64 +5349,74 @@
               {
                 key: "componentDidMount",
                 value: function () {
-                  le.a.init({ duration: 2e3 });
+                  ie.a.init({ duration: 2e3 });
                 },
               },
               {
                 key: "render",
                 value: function () {
-                  return o.a.createElement(
+                  return l.a.createElement(
                     "div",
                     { className: "App" },
-                    o.a.createElement(
-                      I.d,
+                    l.a.createElement(
+                      x.d,
                       null,
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
                         exact: !0,
                         path: "/",
                         component: G,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
                         exact: !0,
                         path: "/signin",
                         component: V,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
                         exact: !0,
                         path: "/signup",
                         component: J,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
                         exact: !0,
                         path: "/Animals/:id/edit",
                         component: pe,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
                         exact: !0,
                         path: "/Createanimals",
                         component: de,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
                         exact: !0,
                         path: "/Manageanimals",
                         component: ge,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(X, {
                         exact: !0,
-                        path: "/paymentform",
+                        path: "/paymentform/:id",
                         component: Ua,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
                         exact: !0,
-                        path: "/ponctualsponsor",
-                        component: _e,
+                        path: "/punctualsponsor/:id",
+                        component: Ha,
                       }),
-                      o.a.createElement(X, {
+                      l.a.createElement(X, {
                         exact: !0,
                         path: "/profile",
-                        component: oe,
+                        component: le,
                       }),
-                      o.a.createElement(I.b, {
+                      l.a.createElement(x.b, {
+                        exact: !0,
+                        path: "/adoption/:id",
+                        component: Wa,
+                      }),
+                      l.a.createElement(x.b, {
+                        exact: !0,
+                        path: "/monthlysponsor/:id",
+                        component: Va,
+                      }),
+                      l.a.createElement(x.b, {
                         exact: !0,
                         path: "/:id",
                         component: Ee,
@@ -4909,18 +5428,18 @@
             ]),
             n
           );
-        })(o.a.Component);
-      n(473), n(474), n(475), n(476), n(477), n(478), n(479), n(480);
-      l.a.render(
-        o.a.createElement(
+        })(l.a.Component);
+      n(474), n(475), n(476), n(477), n(478), n(479), n(480), n(481);
+      i.a.render(
+        l.a.createElement(
           r.a,
           null,
-          o.a.createElement(R, null, o.a.createElement(Ha, null))
+          l.a.createElement(R, null, l.a.createElement(za, null))
         ),
         document.getElementById("root")
       );
     },
   },
-  [[340, 1, 2]],
+  [[341, 1, 2]],
 ]);
-//# sourceMappingURL=main.e7053741.chunk.js.map
+//# sourceMappingURL=main.4072d19f.chunk.js.map

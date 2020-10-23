@@ -59,7 +59,7 @@ router.post("/", uploader.single("image"), (req, res, next) => {
   }
   Animal.create(newConcept)
     .then((animalDoc) => {
-      console.log(animalDoc);
+      // console.log(animalDoc);
       res.status(201).json(animalDoc);
     })
     .catch((error) => {
@@ -87,8 +87,8 @@ router.patch("/:id", uploader.single("image"), (req, res, next) => {
   if (req.file) {
     newConcept.image = req.file.path;
   }
-  console.log(newConcept);
-  console.log(req.params.id);
+  // console.log(newConcept);
+  // console.log(req.params.id);
   Animal.findByIdAndUpdate(req.params.id, newConcept, {
     new: true,
   })
@@ -100,7 +100,7 @@ router.patch("/:id", uploader.single("image"), (req, res, next) => {
 
 //DELETE
 router.delete("/:id", (req, res, next) => {
-  console.log(req.params.id);
+  // console.log(req.params.id);
   Animal.findByIdAndRemove(req.params.id)
     .then((deletedDoc) => {
       res.sendStatus(204);
