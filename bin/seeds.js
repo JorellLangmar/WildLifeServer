@@ -110,7 +110,7 @@ const animals = [
     ConservationStatus: "Vulnerable",
     gender: "Male",
     age: "6 months",
-    description: "Giraffes are native to the open savannahs and wooded grasslands of eastern and southern Africa, where acacia trees and shrubs are plentiful. Their long necks are an adaptation to facilitate feeding on foliage beyond the reach of other hoofed animals, which may explain their plentiful distribution. Like a fingerprint, the markings of a giraffe’s coat are unique to each individual. Habitat destruction continues to threaten their future.ng",
+    description: "Giraffes are native to the open savannahs and wooded grasslands of eastern and southern Africa, where acacia trees and shrubs are plentiful. Their long necks are an adaptation to facilitate feeding on foliage beyond the reach of other hoofed animals, which may explain their plentiful distribution. Like a fingerprint, the markings of a giraffe’s coat are unique to each individual. Habitat destruction continues to threaten their future.",
     adopted: false,
   },
   {
